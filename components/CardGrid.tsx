@@ -56,7 +56,7 @@ export default function CardGrid({ cards, filters, addCard }: any) {
         >
           <img
             src={`/cards/${hovered}.jpg`}
-            className="w-80 border-4 border-black rounded-lg"
+            className="w-[400px] sm:w-[450px] lg:w-[500px] border-4 border-black rounded-lg shadow-2xl"
           />
         </div>
       )}
