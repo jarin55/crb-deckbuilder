@@ -95,7 +95,7 @@ export async function POST(req: Request) {
 
   const buffer = canvas.toBuffer("image/jpeg")
 
-  return new Response(buffer, {
+  return new Response(new Uint8Array(buffer), {
     headers: {
       "Content-Type": "image/jpeg",
       "Content-Disposition": "attachment; filename=deck.jpg"
