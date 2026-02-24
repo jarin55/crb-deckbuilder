@@ -87,8 +87,7 @@ export default function Home() {
         setExtraDeck={setExtraDeck}
         title={title}
       />
-
-      <Preview cardId={preview} />
+      
     </div>
   )
 }
