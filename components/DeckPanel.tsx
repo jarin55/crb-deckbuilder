@@ -28,6 +28,13 @@ export default function DeckPanel({
     }
   }
 
+  function resetDeck() {
+    if (confirm("Are you sure you want to reset the deck?")) {
+      setMainDeck({})
+      setExtraDeck({})
+    }
+  }
+
   async function exportDeck() {
     const cardWidth = 220
     const cardHeight = 310
@@ -82,7 +89,7 @@ export default function DeckPanel({
 
       ctx.drawImage(img, x, y, cardWidth, cardHeight)
 
-      // Quantity (bottom-left, black with white outline)
+      // Quantity bottom-left (black with white outline)
       ctx.font = "60px Arial"
       ctx.lineWidth = 6
       ctx.strokeStyle = "white"
@@ -114,15 +121,18 @@ export default function DeckPanel({
       ctx.fillText(String(qty), x + 15, y + cardHeight - 15)
     }
 
-    // Download
+    const imageData = canvas.toDataURL("image/jpeg")
+
     const link = document.createElement("a")
+    link.href = imageData
     link.download = `${title || "deck"}.jpg`
-    link.href = canvas.toDataURL("image/jpeg")
+    document.body.appendChild(link)
     link.click()
+    document.body.removeChild(link)
   }
 
   return (
-    <div className="w-80 border p-4">
+    <div className="w-full lg:w-80 border p-4">
       <h2 className="font-bold">Main Deck</h2>
       {Object.entries(mainDeck).map(([id, qty]) => (
         <div
@@ -148,7 +158,14 @@ export default function DeckPanel({
       ))}
 
       <button
-        className="mt-4 bg-blue-500 text-white p-2 w-full"
+        className="mt-4 bg-red-500 text-white p-2 w-full"
+        onClick={resetDeck}
+      >
+        Reset Deck
+      </button>
+
+      <button
+        className="mt-2 bg-blue-500 text-white p-2 w-full"
         onClick={exportDeck}
       >
         Export Deck Image
