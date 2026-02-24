@@ -4,7 +4,6 @@ import { useEffect, useState } from "react"
 import CardGrid from "../components/CardGrid"
 import DeckPanel from "../components/DeckPanel"
 import Filters from "../components/Filters"
-import Preview from "../components/Preview"
 
 export default function Home() {
   const [cards, setCards] = useState<any[]>([])
@@ -76,7 +75,6 @@ export default function Home() {
           cards={cards}
           filters={filters}
           addCard={addCard}
-          setPreview={setPreview}
         />
       </div>
 
