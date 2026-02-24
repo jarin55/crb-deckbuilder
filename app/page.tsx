@@ -15,7 +15,6 @@ export default function Home() {
     color: "All",
     level: "All"
   })
-  const [preview, setPreview] = useState<string | null>(null)
   const [title, setTitle] = useState("")
 
   useEffect(() => {
@@ -60,10 +59,10 @@ export default function Home() {
   }
 
   return (
-    <div className="flex p-6 gap-6">
+    <div className="flex flex-col lg:flex-row p-4 gap-4">
       <div className="flex-1">
         <input
-          className="border p-2 mb-3 w-64"
+          className="border p-2 mb-3 w-full lg:w-64"
           placeholder="Deck Title"
           value={title}
           onChange={e => setTitle(e.target.value)}
@@ -83,9 +82,10 @@ export default function Home() {
         extraDeck={extraDeck}
         setMainDeck={setMainDeck}
         setExtraDeck={setExtraDeck}
+        totalMain={totalMain()}
+        totalExtra={totalExtra()}
         title={title}
       />
-      
     </div>
   )
 }

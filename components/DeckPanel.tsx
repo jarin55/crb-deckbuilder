@@ -5,13 +5,17 @@ export default function DeckPanel({
   extraDeck,
   setMainDeck,
   setExtraDeck,
+  totalMain,
+  totalExtra,
   title
 }: any) {
+
+  const MAIN_LIMIT = 60
+  const EXTRA_LIMIT = 6
 
   function removeOne(id: string, isExtra: boolean) {
     if (isExtra) {
       setExtraDeck((prev: any) => {
-        if (!prev[id]) return prev
         const copy = { ...prev }
         copy[id]--
         if (copy[id] <= 0) delete copy[id]
@@ -19,7 +23,6 @@ export default function DeckPanel({
       })
     } else {
       setMainDeck((prev: any) => {
-        if (!prev[id]) return prev
         const copy = { ...prev }
         copy[id]--
         if (copy[id] <= 0) delete copy[id]
@@ -29,110 +32,56 @@ export default function DeckPanel({
   }
 
   function resetDeck() {
-    if (confirm("Are you sure you want to reset the deck?")) {
+    if (confirm("Reset entire deck?")) {
       setMainDeck({})
       setExtraDeck({})
     }
   }
 
-  async function exportDeck() {
-    const cardWidth = 220
-    const cardHeight = 310
-    const padding = 20
-    const columns = 7
-
-    const mainEntries = Object.entries(mainDeck)
-    const extraEntries = Object.entries(extraDeck)
-
-    const rows = Math.ceil(mainEntries.length / columns)
-
-    const mainWidth = columns * (cardWidth + padding) + padding
-    const mainHeight = rows * (cardHeight + padding) + padding
-
-    const extraWidth = cardWidth + padding * 2
-    const canvasWidth = mainWidth + extraWidth
-    const canvasHeight =
-      150 + Math.max(mainHeight, extraEntries.length * (cardHeight + padding))
-
-    const canvas = document.createElement("canvas")
-    canvas.width = canvasWidth
-    canvas.height = canvasHeight
-    const ctx = canvas.getContext("2d")
-
-    if (!ctx) return
-
-    // Background
-    ctx.fillStyle = "#d2d2d2"
-    ctx.fillRect(0, 0, canvas.width, canvas.height)
-
-    // Title
-    ctx.font = "60px Arial"
-    ctx.fillStyle = "black"
-    ctx.fillText(title || "Untitled Deck", 40, 90)
-
-    const loadImage = (src: string) =>
-      new Promise<HTMLImageElement>((resolve) => {
-        const img = new Image()
-        img.src = src
-        img.onload = () => resolve(img)
-      })
-
-    // ===== MAIN DECK =====
-    let row = 0
-    let col = 0
-
-    for (const [id, qty] of mainEntries) {
-      const img = await loadImage(`/cards/${id}.jpg`)
-
-      const x = padding + col * (cardWidth + padding)
-      const y = 120 + padding + row * (cardHeight + padding)
-
-      ctx.drawImage(img, x, y, cardWidth, cardHeight)
-
-      // Quantity bottom-left (black with white outline)
-      ctx.font = "60px Arial"
-      ctx.lineWidth = 6
-      ctx.strokeStyle = "white"
-      ctx.fillStyle = "black"
-
-      ctx.strokeText(String(qty), x + 15, y + cardHeight - 15)
-      ctx.fillText(String(qty), x + 15, y + cardHeight - 15)
-
-      col++
-      if (col >= columns) {
-        col = 0
-        row++
-      }
+  function saveDeck() {
+    const data = {
+      title,
+      mainDeck,
+      extraDeck
     }
 
-    // ===== EXTRA DECK =====
-    const extraX = mainWidth + padding
-
-    for (let i = 0; i < extraEntries.length; i++) {
-      const [id, qty] = extraEntries[i]
-      const img = await loadImage(`/cards/${id}.jpg`)
-
-      const x = extraX
-      const y = 120 + padding + i * (cardHeight + padding)
-
-      ctx.drawImage(img, x, y, cardWidth, cardHeight)
-
-      ctx.strokeText(String(qty), x + 15, y + cardHeight - 15)
-      ctx.fillText(String(qty), x + 15, y + cardHeight - 15)
-    }
-
-    const imageData = canvas.toDataURL("image/jpeg")
+    const blob = new Blob([JSON.stringify(data, null, 2)], {
+      type: "application/json"
+    })
 
     const link = document.createElement("a")
-    link.href = imageData
-    link.download = `${title || "deck"}.jpg`
-    document.body.appendChild(link)
+    link.href = URL.createObjectURL(blob)
+    link.download = `${title || "deck"}.json`
     link.click()
-    document.body.removeChild(link)
+  }
+
+  function loadDeck(event: any) {
+    const file = event.target.files[0]
+    if (!file) return
+
+    const reader = new FileReader()
+    reader.onload = (e: any) => {
+      const data = JSON.parse(e.target.result)
+      setMainDeck(data.mainDeck || {})
+      setExtraDeck(data.extraDeck || {})
+    }
+    reader.readAsText(file)
   }
 
   return (
     <div className="w-full lg:w-80 border p-4">
+
+      {/* COUNTER */}
+      <div className="mb-4">
+        <div className={`font-bold ${totalMain > MAIN_LIMIT ? "text-red-600" : ""}`}>
+          Main: {totalMain} / {MAIN_LIMIT}
+        </div>
+        <div className={`font-bold ${totalExtra > EXTRA_LIMIT ? "text-red-600" : ""}`}>
+          Extra: {totalExtra} / {EXTRA_LIMIT}
+        </div>
+      </div>
+
+      {/* MAIN DECK */}
       <h2 className="font-bold">Main Deck</h2>
       {Object.entries(mainDeck).map(([id, qty]) => (
         <div
@@ -145,6 +94,7 @@ export default function DeckPanel({
         </div>
       ))}
 
+      {/* EXTRA DECK */}
       <h2 className="font-bold mt-4">Extra Deck</h2>
       {Object.entries(extraDeck).map(([id, qty]) => (
         <div
@@ -157,6 +107,7 @@ export default function DeckPanel({
         </div>
       ))}
 
+      {/* BUTTONS */}
       <button
         className="mt-4 bg-red-500 text-white p-2 w-full"
         onClick={resetDeck}
@@ -165,11 +116,21 @@ export default function DeckPanel({
       </button>
 
       <button
-        className="mt-2 bg-blue-500 text-white p-2 w-full"
-        onClick={exportDeck}
+        className="mt-2 bg-green-600 text-white p-2 w-full"
+        onClick={saveDeck}
       >
-        Export Deck Image
+        Save Deck
       </button>
+
+      <label className="mt-2 bg-yellow-500 text-white p-2 w-full text-center block cursor-pointer">
+        Load Deck
+        <input
+          type="file"
+          accept=".json"
+          onChange={loadDeck}
+          className="hidden"
+        />
+      </label>
     </div>
   )
 }
