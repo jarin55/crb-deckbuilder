@@ -192,6 +192,23 @@ export default function DeckPanel({
         </button>
       </div>
 
+      {/* DESKTOP BUTTONS */}
+      <div className="hidden lg:block mt-6 space-y-3">
+        <button
+          className="bg-blue-600 text-white p-3 w-full rounded-md"
+          onClick={exportDeckImage}
+        >
+          Export Deck Image
+        </button>
+
+        <button
+          className="bg-red-600 text-white p-3 w-full rounded-md"
+          onClick={resetDeck}
+        >
+          Reset Deck
+        </button>
+      </div>
+
       {/* MOBILE FIXED EXPORT */}
       <div className="lg:hidden fixed bottom-0 left-0 right-0 bg-black p-3 shadow-2xl z-50">
         <button
