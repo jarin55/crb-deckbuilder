@@ -14,6 +14,24 @@ export default function DeckPanel({
   const MAIN_LIMIT = 60
   const EXTRA_LIMIT = 6
 
+  function removeOne(id: string, isExtra: boolean) {
+    if (isExtra) {
+      setExtraDeck((prev: any) => {
+        const copy = { ...prev }
+        copy[id]--
+        if (copy[id] <= 0) delete copy[id]
+        return copy
+      })
+    } else {
+      setMainDeck((prev: any) => {
+        const copy = { ...prev }
+        copy[id]--
+        if (copy[id] <= 0) delete copy[id]
+        return copy
+      })
+    }
+  }
+
   function resetDeck() {
     if (confirm("Reset entire deck?")) {
       setMainDeck({})
@@ -107,8 +125,9 @@ export default function DeckPanel({
   }
 
   return (
-    <div className="w-full h-full p-4 pb-24 bg-gradient-to-b from-gray-900 to-black text-white">
+    <div className="w-full h-full p-4 bg-gradient-to-b from-gray-900 to-black text-white">
 
+      {/* COUNTER */}
       <div className="mb-4">
         <div className={`font-bold ${totalMain > MAIN_LIMIT ? "text-red-500" : ""}`}>
           Main: {totalMain} / {MAIN_LIMIT}
@@ -118,18 +137,49 @@ export default function DeckPanel({
         </div>
       </div>
 
-      {/* SIMPLE LIST */}
+      {/* MAIN DECK LIST */}
       <div className="space-y-1 text-sm">
-        {Object.entries(mainDeck).map(([id, qty]) => (
-          <div key={id} className="flex justify-between border-b border-gray-700 py-1">
-            <span>{id}</span>
-            <span>x{qty as number}</span>
-          </div>
-        ))}
+        {Object.entries(mainDeck).map(([id, qty]) => {
+          const card = cards.find((c: any) => c.id === id)
+          const displayName = card ? card.display : id
+
+          return (
+            <div
+              key={id}
+              onClick={() => removeOne(id, false)}
+              className="flex justify-between border-b border-gray-700 py-1 cursor-pointer hover:text-red-400"
+            >
+              <span>{displayName}</span>
+              <span>x{qty as number}</span>
+            </div>
+          )
+        })}
       </div>
 
-      {/* DESKTOP BUTTONS */}
-      <div className="hidden lg:block mt-6 space-y-3">
+      {/* EXTRA DECK LIST */}
+      {Object.entries(extraDeck).length > 0 && (
+        <div className="mt-4 space-y-1 text-sm">
+          <h3 className="font-bold mb-2">Extra Deck</h3>
+          {Object.entries(extraDeck).map(([id, qty]) => {
+            const card = cards.find((c: any) => c.id === id)
+            const displayName = card ? card.display : id
+
+            return (
+              <div
+                key={id}
+                onClick={() => removeOne(id, true)}
+                className="flex justify-between border-b border-gray-700 py-1 cursor-pointer hover:text-red-400"
+              >
+                <span>{displayName}</span>
+                <span>x{qty as number}</span>
+              </div>
+            )
+          })}
+        </div>
+      )}
+
+      {/* BUTTONS */}
+      <div className="mt-6 space-y-3">
         <button
           className="bg-blue-600 text-white p-3 w-full rounded-md"
           onClick={exportDeckImage}
@@ -142,16 +192,6 @@ export default function DeckPanel({
           onClick={resetDeck}
         >
           Reset Deck
-        </button>
-      </div>
-
-      {/* MOBILE FIXED EXPORT */}
-      <div className="lg:hidden fixed bottom-0 left-0 right-0 bg-black p-3 shadow-2xl">
-        <button
-          className="bg-blue-600 text-white p-3 w-full rounded-md"
-          onClick={exportDeckImage}
-        >
-          Export Deck Image
         </button>
       </div>
 
