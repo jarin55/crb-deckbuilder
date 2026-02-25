@@ -85,6 +85,7 @@ export default function Home() {
         totalMain={totalMain()}
         totalExtra={totalExtra()}
         title={title}
+        cards={cards}
       />
     </div>
   )

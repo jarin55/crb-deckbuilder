@@ -7,29 +7,12 @@ export default function DeckPanel({
   setExtraDeck,
   totalMain,
   totalExtra,
-  title
+  title,
+  cards
 }: any) {
 
   const MAIN_LIMIT = 60
   const EXTRA_LIMIT = 6
-
-  function removeOne(id: string, isExtra: boolean) {
-    if (isExtra) {
-      setExtraDeck((prev: any) => {
-        const copy = { ...prev }
-        copy[id]--
-        if (copy[id] <= 0) delete copy[id]
-        return copy
-      })
-    } else {
-      setMainDeck((prev: any) => {
-        const copy = { ...prev }
-        copy[id]--
-        if (copy[id] <= 0) delete copy[id]
-        return copy
-      })
-    }
-  }
 
   function resetDeck() {
     if (confirm("Reset entire deck?")) {
@@ -39,11 +22,7 @@ export default function DeckPanel({
   }
 
   function saveDeck() {
-    const data = {
-      title,
-      mainDeck,
-      extraDeck
-    }
+    const data = { title, mainDeck, extraDeck }
 
     const blob = new Blob([JSON.stringify(data, null, 2)], {
       type: "application/json"
@@ -55,82 +34,79 @@ export default function DeckPanel({
     link.click()
   }
 
-  function loadDeck(event: any) {
-    const file = event.target.files[0]
-    if (!file) return
+  // Convert deck into grouped display format
+  function buildGroupedDeck() {
+    const grouped: Record<string, any[]> = {}
 
-    const reader = new FileReader()
-    reader.onload = (e: any) => {
-      const data = JSON.parse(e.target.result)
-      setMainDeck(data.mainDeck || {})
-      setExtraDeck(data.extraDeck || {})
-    }
-    reader.readAsText(file)
+    Object.entries(mainDeck).forEach(([id, qty]) => {
+      const card = cards.find((c: any) => c.id === id)
+      if (!card) return
+
+      const type = card.type || "Other"
+
+      if (!grouped[type]) grouped[type] = []
+      grouped[type].push({ id, qty })
+    })
+
+    return grouped
   }
 
+  const groupedDeck = buildGroupedDeck()
+
   return (
-    <div className="w-full lg:w-80 border p-4">
+    <div className="w-full lg:w-96 p-4 bg-gradient-to-b from-gray-900 to-black text-white rounded-lg">
 
       {/* COUNTER */}
       <div className="mb-4">
-        <div className={`font-bold ${totalMain > MAIN_LIMIT ? "text-red-600" : ""}`}>
+        <div className={`font-bold ${totalMain > MAIN_LIMIT ? "text-red-500" : ""}`}>
           Main: {totalMain} / {MAIN_LIMIT}
         </div>
-        <div className={`font-bold ${totalExtra > EXTRA_LIMIT ? "text-red-600" : ""}`}>
+        <div className={`font-bold ${totalExtra > EXTRA_LIMIT ? "text-red-500" : ""}`}>
           Extra: {totalExtra} / {EXTRA_LIMIT}
         </div>
       </div>
 
-      {/* MAIN DECK */}
-      <h2 className="font-bold">Main Deck</h2>
-      {Object.entries(mainDeck).map(([id, qty]) => (
-        <div
-          key={id}
-          className="flex justify-between cursor-pointer hover:text-red-500"
-          onClick={() => removeOne(id, false)}
-        >
-          <span>{id}</span>
-          <span>x{qty as number}</span>
-        </div>
-      ))}
+      {/* VISUAL DECK PREVIEW */}
+      {Object.entries(groupedDeck).map(([type, cardsList]) => (
+        <div key={type} className="mb-6">
 
-      {/* EXTRA DECK */}
-      <h2 className="font-bold mt-4">Extra Deck</h2>
-      {Object.entries(extraDeck).map(([id, qty]) => (
-        <div
-          key={id}
-          className="flex justify-between cursor-pointer hover:text-red-500"
-          onClick={() => removeOne(id, true)}
-        >
-          <span>{id}</span>
-          <span>x{qty as number}</span>
+          <h3 className="text-lg font-bold mb-2">
+            {type} - {cardsList.reduce((sum: number, c: any) => sum + c.qty, 0)}
+          </h3>
+
+          <div className="flex flex-wrap gap-3">
+            {cardsList.map((card: any) => (
+              <div key={card.id} className="relative">
+                <img
+                  src={`/cards/${card.id}.jpg`}
+                  className="w-28 rounded-lg shadow-lg"
+                />
+
+                {/* Quantity badge */}
+                <div className="absolute bottom-2 left-2 bg-black/70 px-3 py-1 rounded-md text-sm font-bold">
+                  x{card.qty}
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
       ))}
 
       {/* BUTTONS */}
       <button
-        className="mt-4 bg-red-500 text-white p-2 w-full"
+        className="mt-4 bg-red-600 text-white p-2 w-full rounded-md"
         onClick={resetDeck}
       >
         Reset Deck
       </button>
 
       <button
-        className="mt-2 bg-green-600 text-white p-2 w-full"
+        className="mt-2 bg-green-600 text-white p-2 w-full rounded-md"
         onClick={saveDeck}
       >
         Save Deck
       </button>
 
-      <label className="mt-2 bg-yellow-500 text-white p-2 w-full text-center block cursor-pointer">
-        Load Deck
-        <input
-          type="file"
-          accept=".json"
-          onChange={loadDeck}
-          className="hidden"
-        />
-      </label>
     </div>
   )
 }
