@@ -127,7 +127,7 @@ export default function DeckPanel({
   const groupedDeck = buildGroupedDeck()
 
   return (
-    <div className="w-full lg:w-96 p-4 bg-gradient-to-b from-gray-900 to-black text-white rounded-lg">
+    <div className="w-full lg:w-96 p-4 pb-24 bg-gradient-to-b from-gray-900 to-black text-white rounded-lg">
 
       <div className="mb-4">
         <div className={`font-bold ${totalMain > MAIN_LIMIT ? "text-red-500" : ""}`}>
@@ -161,7 +161,8 @@ export default function DeckPanel({
       ))}
 
       {/* Always visible buttons */}
-      <div className="mt-6 space-y-3">
+      {/* Desktop Buttons */}
+      <div className="hidden lg:block mt-6 space-y-3">
         <button
           className="bg-blue-600 text-white p-3 w-full rounded-md"
           onClick={exportDeckImage}
@@ -174,6 +175,16 @@ export default function DeckPanel({
           onClick={resetDeck}
         >
           Reset Deck
+        </button>
+      </div>
+
+      {/* Mobile Fixed Export Bar */}
+      <div className="lg:hidden fixed bottom-0 left-0 right-0 bg-black p-3 shadow-2xl z-50">
+        <button
+          className="bg-blue-600 text-white p-3 w-full rounded-md"
+          onClick={exportDeckImage}
+        >
+          Export Deck Image
         </button>
       </div>
 
