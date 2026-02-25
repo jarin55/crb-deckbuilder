@@ -90,7 +90,6 @@ export default function DeckPanel({
     for (let i = 0; i < extraEntries.length; i++) {
       const [id, qty] = extraEntries[i]
       const img = await loadImage(`/cards/${id}.jpg`)
-
       const x = extraX
       const y = 120 + padding + i * (cardHeight + padding)
 
@@ -107,27 +106,9 @@ export default function DeckPanel({
     document.body.removeChild(link)
   }
 
-  function buildGroupedDeck() {
-    const grouped: Record<string, any[]> = {}
-
-    Object.entries(mainDeck).forEach(([id, qty]) => {
-      const card = cards.find((c: any) => c.id === id)
-      if (!card) return
-
-      const type = card.type || "Other"
-      if (!grouped[type]) grouped[type] = []
-      grouped[type].push({ id, qty })
-    })
-
-    return grouped
-  }
-
-  const groupedDeck = buildGroupedDeck()
-
   return (
-    <div className="w-full lg:w-96 p-4 pb-24 bg-gradient-to-b from-gray-900 to-black text-white rounded-lg">
+    <div className="w-full h-full p-4 pb-24 bg-gradient-to-b from-gray-900 to-black text-white">
 
-      {/* COUNTER */}
       <div className="mb-4">
         <div className={`font-bold ${totalMain > MAIN_LIMIT ? "text-red-500" : ""}`}>
           Main: {totalMain} / {MAIN_LIMIT}
@@ -137,59 +118,14 @@ export default function DeckPanel({
         </div>
       </div>
 
-      {/* MOBILE: SIMPLE LIST */}
-      <div className="lg:hidden">
-        <h3 className="font-bold mb-2">Deck List</h3>
+      {/* SIMPLE LIST */}
+      <div className="space-y-1 text-sm">
         {Object.entries(mainDeck).map(([id, qty]) => (
-          <div key={id} className="flex justify-between border-b border-gray-700 py-1 text-sm">
+          <div key={id} className="flex justify-between border-b border-gray-700 py-1">
             <span>{id}</span>
             <span>x{qty as number}</span>
           </div>
         ))}
-
-        {Object.entries(extraDeck).length > 0 && (
-          <>
-            <h3 className="font-bold mt-4 mb-2">Extra Deck</h3>
-            {Object.entries(extraDeck).map(([id, qty]) => (
-              <div key={id} className="flex justify-between border-b border-gray-700 py-1 text-sm">
-                <span>{id}</span>
-                <span>x{qty as number}</span>
-              </div>
-            ))}
-          </>
-        )}
-      </div>
-
-      {/* DESKTOP: VISUAL PREVIEW */}
-      <div className="hidden lg:block">
-        {Object.entries(groupedDeck).map(([type, cardsList]) => (
-          <div key={type} className="mb-6">
-            <h3 className="text-lg font-bold mb-2">
-              {type} - {cardsList.reduce((sum: number, c: any) => sum + c.qty, 0)}
-            </h3>
-
-            <div className="flex flex-wrap gap-3">
-              {cardsList.map((card: any) => (
-                <div key={card.id} className="relative">
-                  <img
-                    src={`/cards/${card.id}.jpg`}
-                    className="w-28 rounded-lg shadow-lg"
-                  />
-                  <div className="absolute bottom-2 left-2 bg-black/70 px-3 py-1 rounded-md text-sm font-bold">
-                    x{card.qty}
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        ))}
-
-        <button
-          className="mt-4 bg-red-600 text-white p-3 w-full rounded-md"
-          onClick={resetDeck}
-        >
-          Reset Deck
-        </button>
       </div>
 
       {/* DESKTOP BUTTONS */}
@@ -210,7 +146,7 @@ export default function DeckPanel({
       </div>
 
       {/* MOBILE FIXED EXPORT */}
-      <div className="lg:hidden fixed bottom-0 left-0 right-0 bg-black p-3 shadow-2xl z-50">
+      <div className="lg:hidden fixed bottom-0 left-0 right-0 bg-black p-3 shadow-2xl">
         <button
           className="bg-blue-600 text-white p-3 w-full rounded-md"
           onClick={exportDeckImage}
@@ -218,6 +154,7 @@ export default function DeckPanel({
           Export Deck Image
         </button>
       </div>
+
     </div>
   )
 }
