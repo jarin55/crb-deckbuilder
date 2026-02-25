@@ -4,7 +4,7 @@ export default function Filters({ filters, setFilters }: any) {
 
       {/* Search */}
       <input
-        className="border p-2"
+        className="border p-2 bg-white text-black rounded"
         placeholder="Search"
         value={filters.search}
         onChange={(e) =>
@@ -14,7 +14,7 @@ export default function Filters({ filters, setFilters }: any) {
 
       {/* Type */}
       <select
-        className="border p-2"
+        className="border p-2 bg-white text-black rounded"
         value={filters.type}
         onChange={(e) =>
           setFilters({ ...filters, type: e.target.value })
@@ -31,7 +31,7 @@ export default function Filters({ filters, setFilters }: any) {
 
       {/* Level */}
       <select
-        className="border p-2"
+        className="border p-2 bg-white text-black rounded"
         value={filters.level}
         onChange={(e) =>
           setFilters({ ...filters, level: e.target.value })
@@ -45,7 +45,7 @@ export default function Filters({ filters, setFilters }: any) {
 
       {/* Color */}
       <select
-        className="border p-2"
+        className="border p-2 bg-white text-black rounded"
         value={filters.color}
         onChange={(e) =>
           setFilters({ ...filters, color: e.target.value })
