@@ -48,7 +48,7 @@ export default function CardGrid({ cards, filters, addCard }: any) {
       {/* HOVER PREVIEW */}
       {hovered && (
         <div
-          className="fixed z-50 shadow-2xl"
+          className="hidden lg:block fixed z-50 shadow-2xl"
           style={{
             left: position.x,
             top: position.y

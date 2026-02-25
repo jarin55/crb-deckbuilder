@@ -21,19 +21,6 @@ export default function DeckPanel({
     }
   }
 
-  function saveDeck() {
-    const data = { title, mainDeck, extraDeck }
-
-    const blob = new Blob([JSON.stringify(data, null, 2)], {
-      type: "application/json"
-    })
-
-    const link = document.createElement("a")
-    link.href = URL.createObjectURL(blob)
-    link.download = `${title || "deck"}.json`
-    link.click()
-  }
-
   async function exportDeckImage() {
     const cardWidth = 220
     const cardHeight = 310
@@ -152,7 +139,6 @@ export default function DeckPanel({
 
       {Object.entries(groupedDeck).map(([type, cardsList]) => (
         <div key={type} className="mb-6">
-
           <h3 className="text-lg font-bold mb-2">
             {type} - {cardsList.reduce((sum: number, c: any) => sum + c.qty, 0)}
           </h3>
@@ -178,13 +164,6 @@ export default function DeckPanel({
         onClick={exportDeckImage}
       >
         Export Deck Image
-      </button>
-
-      <button
-        className="mt-2 bg-green-600 text-white p-2 w-full rounded-md"
-        onClick={saveDeck}
-      >
-        Save Deck JSON
       </button>
 
       <button
