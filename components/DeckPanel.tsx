@@ -104,7 +104,9 @@ export default function DeckPanel({
     const link = document.createElement("a")
     link.href = canvas.toDataURL("image/jpeg")
     link.download = `${title || "deck"}.jpg`
+    document.body.appendChild(link)
     link.click()
+    document.body.removeChild(link)
   }
 
   function buildGroupedDeck() {
@@ -115,7 +117,6 @@ export default function DeckPanel({
       if (!card) return
 
       const type = card.type || "Other"
-
       if (!grouped[type]) grouped[type] = []
       grouped[type].push({ id, qty })
     })
@@ -159,19 +160,22 @@ export default function DeckPanel({
         </div>
       ))}
 
-      <button
-        className="mt-4 bg-blue-600 text-white p-2 w-full rounded-md"
-        onClick={exportDeckImage}
-      >
-        Export Deck Image
-      </button>
+      {/* Always visible buttons */}
+      <div className="mt-6 space-y-3">
+        <button
+          className="bg-blue-600 text-white p-3 w-full rounded-md"
+          onClick={exportDeckImage}
+        >
+          Export Deck Image
+        </button>
 
-      <button
-        className="mt-2 bg-red-600 text-white p-2 w-full rounded-md"
-        onClick={resetDeck}
-      >
-        Reset Deck
-      </button>
+        <button
+          className="bg-red-600 text-white p-3 w-full rounded-md"
+          onClick={resetDeck}
+        >
+          Reset Deck
+        </button>
+      </div>
 
     </div>
   )
