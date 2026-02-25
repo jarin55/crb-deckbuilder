@@ -27,6 +27,8 @@ export default function CardGrid({ cards, filters, addCard }: any) {
             key={card.id}
             className="relative"
             onMouseEnter={(e) => {
+              if (window.innerWidth < 1024) return
+              
               const rect = e.currentTarget.getBoundingClientRect()
               setPosition({
                 x: rect.right + 10,
