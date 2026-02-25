@@ -59,10 +59,12 @@ export default function Home() {
   }
 
   return (
-    <div className="flex flex-col lg:flex-row p-4 gap-4">
-      <div className="flex-1">
+    <div className="flex flex-row lg:flex-row h-screen overflow-hidden">
+
+      {/* LEFT SIDE — CARD GRID */}
+      <div className="flex-1 overflow-y-auto p-3">
         <input
-          className="border p-2 mb-3 w-full lg:w-64"
+          className="border p-2 mb-3 w-full"
           placeholder="Deck Title"
           value={title}
           onChange={e => setTitle(e.target.value)}
@@ -77,16 +79,20 @@ export default function Home() {
         />
       </div>
 
-      <DeckPanel
-        mainDeck={mainDeck}
-        extraDeck={extraDeck}
-        setMainDeck={setMainDeck}
-        setExtraDeck={setExtraDeck}
-        totalMain={totalMain()}
-        totalExtra={totalExtra()}
-        title={title}
-        cards={cards}
-      />
+      {/* RIGHT SIDE — DECK PANEL */}
+      <div className="w-40 sm:w-56 md:w-72 lg:w-96 border-l border-gray-700 overflow-y-auto">
+        <DeckPanel
+          mainDeck={mainDeck}
+          extraDeck={extraDeck}
+          setMainDeck={setMainDeck}
+          setExtraDeck={setExtraDeck}
+          totalMain={totalMain()}
+          totalExtra={totalExtra()}
+          title={title}
+          cards={cards}
+        />
+      </div>
+
     </div>
   )
 }
