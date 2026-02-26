@@ -141,7 +141,7 @@ export default function Home() {
           />
         </div>
 
-        <div className="w-40 sm:w-56 md:w-72 lg:w-96 border-l border-gray-800 overflow-y-auto">
+        <div className="w-64 sm:w-80 md:w-[380px] lg:w-[450px] xl:w-[500px] border-l border-gray-800 overflow-y-auto">
           <DeckPanel
             mainDeck={mainDeck}
             extraDeck={extraDeck}
