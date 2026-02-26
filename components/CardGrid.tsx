@@ -21,7 +21,7 @@ export default function CardGrid({ cards, filters, addCard }: any) {
   return (
     <div className="relative">
       {/* CARD GRID */}
-      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+      <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 gap-6">
         {filtered.map((card: any) => (
           <div
             key={card.id}
