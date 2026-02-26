@@ -116,8 +116,8 @@ export default function DeckPanel({
     const { error } = await supabase.from("decks").insert({
       user_id: user.id,
       title: finalTitle,
-      main_deck: mainDeck,
-      extra_deck: extraDeck
+      main_deck: JSON.parse(JSON.stringify(mainDeck)),
+      extra_deck: JSON.parse(JSON.stringify(extraDeck))
     })
 
     if (error) alert("Error saving deck")
@@ -140,8 +140,18 @@ export default function DeckPanel({
   }
 
   function loadDeck(deck: any) {
-    setMainDeck(deck.main_deck)
-    setExtraDeck(deck.extra_deck)
+    let main = deck.main_deck
+    let extra = deck.extra_deck
+
+    if (typeof main === "string") {
+      try { main = JSON.parse(main) } catch {}
+    }
+    if (typeof extra === "string") {
+      try { main = JSON.parse(extra) } catch {}
+    }
+
+    setMainDeck(main || {})
+    setExtraDeck(extra || {})
     setShowLoad(false)
   }
 
