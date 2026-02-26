@@ -37,6 +37,85 @@ export default function DeckPanel({
     })
   }, [])
 
+  // ================= SAVE =================
+
+  async function saveDeck() {
+    if (!user) {
+      alert("Please login to save deck.")
+      return
+    }
+
+    if (!title.trim()) {
+      alert("Please enter deck title.")
+      return
+    }
+
+    const baseTitle = title.trim()
+
+    const { data: existingDecks } = await supabase
+      .from("decks")
+      .select("title")
+      .eq("user_id", user.id)
+      .ilike("title", `${baseTitle}%`)
+
+    let finalTitle = baseTitle
+
+    if (existingDecks && existingDecks.length > 0) {
+      const titles = existingDecks.map(d => d.title)
+
+      if (titles.includes(baseTitle)) {
+        let counter = 1
+        while (titles.includes(`${baseTitle} (${counter})`)) {
+          counter++
+        }
+        finalTitle = `${baseTitle} (${counter})`
+      }
+    }
+
+    const { error } = await supabase.from("decks").insert({
+      user_id: user.id,
+      title: finalTitle,
+      main_deck: mainDeck,
+      extra_deck: extraDeck
+    })
+
+    if (error) {
+      console.error(error)
+      alert("Error saving deck.")
+    } else {
+      alert(`Deck saved as "${finalTitle}"`)
+    }
+  }
+
+  async function fetchDecks() {
+    if (!user) {
+      alert("Please login first.")
+      return
+    }
+
+    const { data, error } = await supabase
+      .from("decks")
+      .select("*")
+      .eq("user_id", user.id)
+      .order("created_at", { ascending: false })
+
+    if (!error) {
+      setSavedDecks(data || [])
+      setShowLoad(true)
+    }
+  }
+
+  function loadDeck(deck: any) {
+    setMainDeck(deck.main_deck || {})
+    setExtraDeck(deck.extra_deck || {})
+    setShowLoad(false)
+  }
+
+  async function deleteDeck(id: string) {
+    await supabase.from("decks").delete().eq("id", id)
+    fetchDecks()
+  }
+
   // ================= COUNTERS =================
 
   const mainCount = useMemo(
@@ -49,17 +128,28 @@ export default function DeckPanel({
     [extraDeck]
   )
 
+  const mainOver = mainCount > MAIN_LIMIT
+  const extraOver = extraCount > EXTRA_LIMIT
+
   // ================= ADD / REMOVE =================
 
   function addOne(id: string, isExtra: boolean) {
     if (isExtra) {
       if (extraCount >= EXTRA_LIMIT) return
       if ((extraDeck[id] || 0) >= COPY_LIMIT) return
-      setExtraDeck((prev: any) => ({ ...prev, [id]: (prev[id] || 0) + 1 }))
+
+      setExtraDeck((prev: any) => ({
+        ...prev,
+        [id]: (prev[id] || 0) + 1
+      }))
     } else {
       if (mainCount >= MAIN_LIMIT) return
       if ((mainDeck[id] || 0) >= COPY_LIMIT) return
-      setMainDeck((prev: any) => ({ ...prev, [id]: (prev[id] || 0) + 1 }))
+
+      setMainDeck((prev: any) => ({
+        ...prev,
+        [id]: (prev[id] || 0) + 1
+      }))
     }
   }
 
@@ -88,82 +178,11 @@ export default function DeckPanel({
     }
   }
 
-  // ================= SAVE =================
-
-  async function saveDeck() {
-    if (!user) return alert("Login first")
-    if (!title.trim()) return alert("Enter deck title")
-
-    const baseTitle = title.trim()
-
-    const { data: existing } = await supabase
-      .from("decks")
-      .select("title")
-      .eq("user_id", user.id)
-      .ilike("title", `${baseTitle}%`)
-
-    let finalTitle = baseTitle
-
-    if (existing && existing.length > 0) {
-      const titles = existing.map(d => d.title)
-      if (titles.includes(baseTitle)) {
-        let counter = 1
-        while (titles.includes(`${baseTitle} (${counter})`)) counter++
-        finalTitle = `${baseTitle} (${counter})`
-      }
-    }
-
-    const { error } = await supabase.from("decks").insert({
-      user_id: user.id,
-      title: finalTitle,
-      main_deck: JSON.parse(JSON.stringify(mainDeck)),
-      extra_deck: JSON.parse(JSON.stringify(extraDeck))
-    })
-
-    if (error) alert("Error saving deck")
-    else alert(`Saved as "${finalTitle}"`)
-  }
-
-  // ================= LOAD =================
-
-  async function fetchDecks() {
-    if (!user) return alert("Login first")
-
-    const { data } = await supabase
-      .from("decks")
-      .select("*")
-      .eq("user_id", user.id)
-      .order("created_at", { ascending: false })
-
-    setSavedDecks(data || [])
-    setShowLoad(true)
-  }
-
-  function loadDeck(deck: any) {
-    let main = deck.main_deck
-    let extra = deck.extra_deck
-
-    if (typeof main === "string") {
-      try { main = JSON.parse(main) } catch {}
-    }
-    if (typeof extra === "string") {
-      try { main = JSON.parse(extra) } catch {}
-    }
-
-    setMainDeck(main || {})
-    setExtraDeck(extra || {})
-    setShowLoad(false)
-  }
-
-  async function deleteDeck(id: string) {
-    await supabase.from("decks").delete().eq("id", id)
-    fetchDecks()
-  }
-
   // ================= IMPORT =================
 
   function parseImport(replace: boolean) {
     const lines = importText.split("\n")
+
     const newMain: Record<string, number> = replace ? {} : { ...mainDeck }
     const newExtra: Record<string, number> = replace ? {} : { ...extraDeck }
 
@@ -180,12 +199,14 @@ export default function DeckPanel({
 
       const id = idParts[0] + "-" + idParts[1]
       const card = cards.find((c: any) => c.id === id)
+
       if (!card || isNaN(qty)) return
 
-      if (card.type === "Extra")
+      if (card.type === "Extra") {
         newExtra[id] = (newExtra[id] || 0) + qty
-      else
+      } else {
         newMain[id] = (newMain[id] || 0) + qty
+      }
     })
 
     setMainDeck(newMain)
@@ -202,7 +223,7 @@ export default function DeckPanel({
     const cardWidth = 220
     const cardHeight = 310
     const padding = 20
-    const columns = 6
+    const columns = 7
     const titleSpace = 120
 
     const canvas = document.createElement("canvas")
@@ -210,7 +231,11 @@ export default function DeckPanel({
     if (!ctx) return
 
     const grouped: Record<string, any[]> = {
-      Cookie: [], Trap: [], Item: [], Stage: [], Flip: []
+      Cookie: [],
+      Trap: [],
+      Item: [],
+      Stage: [],
+      Flip: []
     }
 
     Object.entries(mainDeck).forEach(([id, qty]) => {
@@ -221,10 +246,14 @@ export default function DeckPanel({
 
     grouped["Cookie"]?.sort((a, b) => b.level - a.level)
 
-    const ordered = ["Cookie", "Trap", "Item", "Stage", "Flip"]
-      .flatMap(type => grouped[type] || [])
+    const orderedTypes = ["Cookie", "Trap", "Item", "Stage", "Flip"]
+    const orderedMain: any[] = []
 
-    const rows = Math.ceil(ordered.length / columns)
+    orderedTypes.forEach(type => {
+      if (grouped[type]) orderedMain.push(...grouped[type])
+    })
+
+    const rows = Math.ceil(orderedMain.length / columns)
 
     const mainWidth = columns * (cardWidth + padding) + padding
     const mainHeight = rows * (cardHeight + padding) + padding
@@ -243,7 +272,7 @@ export default function DeckPanel({
     ctx.fillStyle = "#d2d2d2"
     ctx.fillRect(0, 0, canvasWidth, canvasHeight)
 
-    ctx.font = "bold 60px Arial"
+    ctx.font = "60px Arial"
     ctx.fillStyle = "black"
     ctx.fillText(title || "Untitled Deck", padding, 80)
 
@@ -257,7 +286,7 @@ export default function DeckPanel({
     let row = 0
     let col = 0
 
-    for (const card of ordered) {
+    for (const card of orderedMain) {
       const img = await loadImage(`/cards/${card.id}.jpg`)
       const x = padding + col * (cardWidth + padding)
       const y = titleSpace + padding + row * (cardHeight + padding)
@@ -268,11 +297,15 @@ export default function DeckPanel({
       ctx.fillStyle = "black"
       ctx.lineWidth = 6
       ctx.font = "bold 60px Arial"
+
       ctx.strokeText(String(card.qty), x + 15, y + cardHeight - 15)
       ctx.fillText(String(card.qty), x + 15, y + cardHeight - 15)
 
       col++
-      if (col >= columns) { col = 0; row++ }
+      if (col >= columns) {
+        col = 0
+        row++
+      }
     }
 
     const extraX = mainWidth + padding
@@ -293,8 +326,29 @@ export default function DeckPanel({
     const link = document.createElement("a")
     link.href = canvas.toDataURL("image/jpeg", 1.0)
     link.download = `${title || "deck"}.jpg`
+    document.body.appendChild(link)
     link.click()
+    document.body.removeChild(link)
   }
+
+  // ================= PREVIEW GROUP =================
+
+  const groupedPreview: Record<string, any[]> = {
+    Cookie: [],
+    Trap: [],
+    Item: [],
+    Stage: [],
+    Flip: []
+  }
+
+  Object.entries(mainDeck).forEach(([id, qty]) => {
+    const card = cards.find((c: any) => c.id === id)
+    if (!card) return
+    groupedPreview[card.type]?.push({ ...card, qty })
+  })
+
+  groupedPreview["Cookie"]?.sort((a, b) => b.level - a.level)
+  const orderedTypes = ["Cookie", "Trap", "Item", "Stage", "Flip"]
 
   return (
     <div className="w-full h-full p-4 bg-gradient-to-b from-gray-900 to-black text-white overflow-y-auto">
@@ -307,28 +361,118 @@ export default function DeckPanel({
         <button onClick={resetDeck} className="bg-red-600 px-3 py-2 rounded-md">Reset</button>
       </div>
 
-      {/* Import Modal */}
+      <div className="mb-4">
+        <div className={mainOver ? "text-red-400 font-bold" : "font-bold"}>Main: {mainCount} / 60</div>
+        <div className={extraOver ? "text-red-400 font-bold" : "font-bold"}>Extra: {extraCount} / 6</div>
+      </div>
+
+      {orderedTypes.map(type => {
+        const cardsInType = groupedPreview[type]
+        if (!cardsInType?.length) return null
+
+        const typeTotal = cardsInType.reduce((sum, c) => sum + c.qty, 0)
+
+        return (
+          <div key={type} className="mb-6">
+            <h3 className="text-lg font-bold mb-2">
+              {type === "Cookie" ? "Cookies" : type} ({typeTotal})
+            </h3>
+
+            <div className="grid grid-cols-3 gap-3">
+              {cardsInType.map(card => (
+                <div key={card.id} className="bg-gray-800 p-2 rounded-lg">
+
+                  <img
+                    src={`/cards/${card.id}.jpg`}
+                    className="w-full rounded-md shadow-lg"
+                  />
+
+                  <div className="text-sm font-bold mt-1">x{card.qty}</div>
+
+                  <div className="flex justify-center gap-2 mt-2">
+                    <button
+                      onClick={() => removeOne(card.id, false)}
+                      className="bg-gray-700 px-3 py-1 rounded-md"
+                    >
+                      –
+                    </button>
+
+                    <button
+                      onClick={() => addOne(card.id, false)}
+                      className="bg-blue-600 px-3 py-1 rounded-md"
+                    >
+                      +
+                    </button>
+                  </div>
+
+                </div>
+              ))}
+            </div>
+          </div>
+        )
+      })}
+
+      {Object.keys(extraDeck).length > 0 && (
+        <div className="mb-6">
+          <h3 className="text-lg font-bold mb-2">
+            Extra ({extraCount})
+          </h3>
+
+          <div className="grid grid-cols-3 gap-3">
+            {Object.entries(extraDeck).map(([id, qty]) => (
+              <div key={id} className="bg-gray-800 p-2 rounded-lg">
+
+                <img
+                  src={`/cards/${id}.jpg`}
+                  className="w-full rounded-md shadow-lg"
+                />
+
+                <div className="text-sm font-bold mt-1">x{qty}</div>
+
+                <div className="flex justify-center gap-2 mt-2">
+                  <button
+                    onClick={() => removeOne(id, true)}
+                    className="bg-gray-700 px-3 py-1 rounded-md"
+                  >
+                    –
+                  </button>
+
+                  <button
+                    onClick={() => addOne(id, true)}
+                    className="bg-blue-600 px-3 py-1 rounded-md"
+                  >
+                    +
+                  </button>
+                </div>
+
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
       {showImport && (
         <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50">
           <div className="bg-gray-900 p-6 rounded-lg w-[500px]">
+            <h2 className="text-xl mb-4">Import Deck</h2>
             <textarea
               className="w-full h-64 bg-gray-800 p-3 rounded-md"
               value={importText}
               onChange={(e) => setImportText(e.target.value)}
             />
             <div className="flex justify-end gap-3 mt-4">
-              <button onClick={() => parseImport(false)} className="bg-blue-600 px-4 py-2 rounded-md">Import Add</button>
-              <button onClick={() => parseImport(true)} className="bg-green-600 px-4 py-2 rounded-md">Import Replace</button>
+              <button onClick={() => parseImport(false)} className="bg-blue-600 px-4 py-2 rounded-md">Import and add</button>
+              <button onClick={() => parseImport(true)} className="bg-green-600 px-4 py-2 rounded-md">Import and replace</button>
               <button onClick={() => setShowImport(false)} className="bg-gray-600 px-4 py-2 rounded-md">Cancel</button>
             </div>
           </div>
         </div>
       )}
 
-      {/* Load Modal */}
       {showLoad && (
         <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50">
           <div className="bg-gray-900 p-6 rounded-lg w-[400px]">
+            <h2 className="text-lg mb-4">Saved Decks</h2>
             {savedDecks.map(deck => (
               <div key={deck.id} className="flex justify-between mb-2">
                 <span>{deck.title}</span>
