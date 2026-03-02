@@ -12,7 +12,7 @@
         "isHorizontal": false
       }
     },
-    "name": "P-104-Choco Drizzle Cookie",
+    "name": "P-103@1-Choco Drizzle Cookie",
     "type": "Cookie",
     "cost": 0,
     "level": "2",
@@ -33,7 +33,7 @@
         "isHorizontal": false
       }
     },
-    "name": "P-104-Green Tea Mousse Cookie",
+    "name": "P-104@1-Green Tea Mousse Cookie",
     "type": "Cookie",
     "cost": 0,
     "level": "2",
@@ -54,7 +54,7 @@
         "isHorizontal": false
       }
     },
-    "name": "P-105-Pudding à la Mode Cookie",
+    "name": "P-105@1-Pudding à la Mode Cookie",
     "type": "Cookie",
     "cost": 0,
     "level": "2",
@@ -75,7 +75,7 @@
         "isHorizontal": false
       }
     },
-    "name": "P-121-Pudding à la Mode Cookie",
+    "name": "P-092-Pudding à la Mode Cookie",
     "type": "Flip",
     "cost": 0,
     "level": "2",
