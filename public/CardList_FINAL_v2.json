@@ -30896,7 +30896,7 @@
     "face": {
       "front": {
         "name": "GingerBrave",
-        "type": "Trap",
+        "type": "Cookie",
         "cost": 0,
         "color": null,
         "image": "https://assets.cookierunbraverse.com/braverse/images/card_webp/card/en/P_036@1.png.webp",
@@ -30904,7 +30904,7 @@
       }
     },
     "name": "P-036@1-GingerBrave",
-    "type": "Trap",
+    "type": "Cookie",
     "cost": 0,
     "level": "0",
     "color": "Red",
