@@ -30,6 +30,8 @@ export default function DeckPanel({
   const [user, setUser] = useState<any>(null)
   const [showLoad, setShowLoad] = useState(false)
   const [savedDecks, setSavedDecks] = useState<any[]>([])
+  const [showExportText, setShowExportText] = useState(false)
+  const [exportText, setExportText] = useState("")
 
   useEffect(() => {
     supabase.auth.getUser().then(({ data }) => {
@@ -331,6 +333,32 @@ export default function DeckPanel({
     document.body.removeChild(link)
   }
 
+  // ================= EXPORT TEXT ==================
+  
+  function generateExportText() {
+    const lines: string[] = []
+
+    Object.entries(mainDeck).forEach(([id, qty]) => {
+      const card = cards.find((c: any) => c.id === id)
+      if (!card) return
+      lines.push(`${qty} ${card.display}`)
+    })
+
+    Object.entries(extraDeck).forEach(([id, qty]) => {
+      const card = cards.find((c: any) => c.id === id)
+      if (!card) return
+      lines.push(`${qty} ${card.display}`)
+    })
+
+    const text = lines.join("\n")
+    setExportText(text)
+    setShowExportText(true)
+  }
+
+  function copyExportText() {
+    navigator.clipboard.writeText(exportText)
+  }
+
   // ================= PREVIEW GROUP =================
 
   const groupedPreview: Record<string, any[]> = {
@@ -354,7 +382,8 @@ export default function DeckPanel({
     <div className="w-full h-full p-4 bg-gradient-to-b from-gray-900 to-black text-white overflow-y-auto">
 
       <div className="flex gap-2 mb-4 flex-wrap">
-        <button onClick={exportDeckImage} className="bg-blue-600 px-3 py-2 rounded-md">Export</button>
+        <button onClick={exportDeckImage} className="bg-blue-600 px-3 py-2 rounded-md">ExportImage</button>
+        <button onClick={generateExportText} className="bg-indigo-600 px-3 py-2 rounded-md">ExportText</button>
         <button onClick={() => setShowImport(true)} className="bg-purple-600 px-3 py-2 rounded-md">Import</button>
         <button onClick={saveDeck} className="bg-green-600 px-3 py-2 rounded-md">Save</button>
         <button onClick={fetchDecks} className="bg-yellow-600 px-3 py-2 rounded-md">Load</button>
@@ -486,7 +515,36 @@ export default function DeckPanel({
           </div>
         </div>
       )}
+      {showExportText && (
+        <div className="fixed inset-0 bg-black/60 flex items-center justify-center z-50">
+          <div className="bg-gray-900 p-6 rounded-lg w-[600px] max-h-[80vh] flex flex-col">
+            
+            <div className="flex justify-between items-center mb-4">
+              <h2 className="text-xl font-bold">Export</h2>
+              <button
+                onClick={() => setShowExportText(false)}
+                className="text-gray-400 text-xl"
+              >
+                ×
+              </button>
+            </div>
 
+            <textarea
+              className="w-full h-[400px] bg-gray-800 p-4 rounded-md text-sm resize-none overflow-y-auto"
+              value={exportText}
+              readOnly
+            />
+
+            <button
+              onClick={copyExportText}
+              className="mt-4 bg-gray-700 hover:bg-gray-600 py-2 rounded-md"
+            >
+              Copy
+            </button>
+
+          </div>
+        </div>
+      )}
     </div>
   )
 }
