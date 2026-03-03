@@ -221,6 +221,11 @@ export default function DeckPanel({
 
   async function exportDeckImage() {
 
+    if (!title.trim()) {
+      alert("Please enter deck title.")
+      return
+    }
+
     const scale = 2
     const cardWidth = 220
     const cardHeight = 310
