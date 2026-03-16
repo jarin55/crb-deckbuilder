@@ -1,4 +1,46 @@
 {
+  "P-124": {
+    "id": "P-124",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Milky Way Cookie",
+        "type": "Cookie",
+        "cost": 0,
+        "color": null,
+        "image": "https://cookierunbraverse.com/data/en_storage/t6hceM3aTCGxRXN7lOqkEg.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "P-124-Milky Way Cookie",
+    "type": "Cookie",
+    "cost": 0,
+    "level": "2",
+    "color": "Purple",
+    "rarity": "P",
+    "set": "Promo"
+  },
+  "P-123": {
+    "id": "P-123",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Sorbet Shark Cookie",
+        "type": "Cookie",
+        "cost": 0,
+        "color": null,
+        "image": "https://cookierunbraverse.com/data/en_storage/t6hceM3aTCGxRXN7lOqkEg.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "P-123-Sorbet Shark Cookie",
+    "type": "Cookie",
+    "cost": 0,
+    "level": "2",
+    "color": "Blue",
+    "rarity": "P",
+    "set": "Promo"
+  },
   "P-103@1": {
     "id": "P-103@1",
     "isToken": false,
