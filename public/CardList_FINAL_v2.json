@@ -36881,7 +36881,7 @@
     "face": {
       "front": {
         "name": "Supreme Whipped Cream",
-        "type": "Cookie",
+        "type": "Trap",
         "cost": 0,
         "color": null,
         "image": "https://assets.cookierunbraverse.com/braverse/images/card_webp/card/en/ST3_019@1.png.webp",
@@ -36889,7 +36889,7 @@
       }
     },
     "name": "ST3-019@1-Supreme Whipped Cream",
-    "type": "Cookie",
+    "type": "Trap",
     "cost": 0,
     "level": "None",
     "color": "Green",
