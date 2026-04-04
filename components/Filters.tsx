@@ -60,7 +60,7 @@ export default function Filters({ filters, setFilters }: any) {
         <option value="Colorless">Colorless</option>
       </select>
 
-      {/* Rarities */}
+      {/* Rarity */}
       <select
         className="border p-2 bg-white text-black rounded"
         value={filters.rarity}
