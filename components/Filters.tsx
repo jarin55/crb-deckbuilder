@@ -60,6 +60,26 @@ export default function Filters({ filters, setFilters }: any) {
         <option value="Colorless">Colorless</option>
       </select>
 
+      {/* Rarities */}
+      <select
+        className="border p-2 bg-white text-black rounded"
+        value={filters.rarity}
+        onChange={(e) =>
+          setFilters({ ...filters, rarity: e.target.value })
+        }
+      >
+        <option value="All">All Rarities</option>
+        <option value="C">C</option>
+        <option value="U">U</option>
+        <option value="R">R</option>
+        <option value="SR">SR</option>
+        <option value="UR">UR</option>
+        <option value="SSR">SSR</option>
+        <option value="SUR">SUR</option>
+        <option value="EXR">EXR</option>
+        <option value="P">P</option>
+      </select>
+
     </div>
   )
 }

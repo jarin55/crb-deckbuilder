@@ -19,7 +19,8 @@ export default function Home() {
     search: "",
     type: "All",
     level: "All",
-    color: "All"
+    color: "All",
+    rarity: "All"
   })
 
   // LOAD CARDS
@@ -33,7 +34,8 @@ export default function Home() {
           display: `${card.id}-${card.face.front.name}`,
           type: card.type || "",
           level: card.level || 0,
-          color: card.color || ""
+          color: card.color || "",
+          rarity: card.rarity || ""
         }))
         setCards(formatted)
       })
