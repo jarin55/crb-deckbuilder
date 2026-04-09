@@ -15,6 +15,8 @@ export default function CardGrid({ cards, filters, addCard }: any) {
       return false
     if (filters.color !== "All" && card.color !== filters.color)
       return false
+    if (filters.rarity !== "All" && card.rarity !== filters.rarity)
+  return false
     return true
   })
 
