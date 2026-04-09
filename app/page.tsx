@@ -35,7 +35,7 @@ export default function Home() {
           type: card.type || "",
           level: card.level || 0,
           color: card.color || "",
-          rarity: card.rarity || ""
+          rarity: card.rarity?.name || card.rarity || ""
         }))
         setCards(formatted)
       })
