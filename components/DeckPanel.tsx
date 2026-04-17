@@ -370,6 +370,9 @@ function generateExportText() {
   setExportText(text)
   setShowExportText(true)
 }
+function copyExportText() {
+  navigator.clipboard.writeText(exportText)
+}
 
   // ================= PREVIEW GROUP =================
 
