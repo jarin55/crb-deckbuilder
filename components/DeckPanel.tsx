@@ -340,29 +340,36 @@ export default function DeckPanel({
 
   // ================= EXPORT TEXT ==================
   
-  function generateExportText() {
-    const lines: string[] = []
+  function formatDisplay(display: string) {
+  const parts = display.split("-")
 
-    Object.entries(mainDeck).forEach(([id, qty]) => {
-      const card = cards.find((c: any) => c.id === id)
-      if (!card) return
-      lines.push(`${qty} ${card.display}`)
-    })
+  if (parts.length < 3) return display // fallback if unexpected format
 
-    Object.entries(extraDeck).forEach(([id, qty]) => {
-      const card = cards.find((c: any) => c.id === id)
-      if (!card) return
-      lines.push(`${qty} ${card.display}`)
-    })
+  const code = `${parts[0]}-${parts[1]}`
+  const name = parts.slice(2).join("-")
 
-    const text = lines.join("\n")
-    setExportText(text)
-    setShowExportText(true)
-  }
+  return `${name} [${code}]`
+}
 
-  function copyExportText() {
-    navigator.clipboard.writeText(exportText)
-  }
+function generateExportText() {
+  const lines: string[] = []
+
+  Object.entries(mainDeck).forEach(([id, qty]) => {
+    const card = cards.find((c: any) => c.id === id)
+    if (!card) return
+    lines.push(`${qty} ${formatDisplay(card.display)}`)
+  })
+
+  Object.entries(extraDeck).forEach(([id, qty]) => {
+    const card = cards.find((c: any) => c.id === id)
+    if (!card) return
+    lines.push(`${qty} ${formatDisplay(card.display)}`)
+  })
+
+  const text = lines.join("\n")
+  setExportText(text)
+  setShowExportText(true)
+}
 
   // ================= PREVIEW GROUP =================
 
