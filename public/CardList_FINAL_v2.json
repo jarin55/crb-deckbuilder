@@ -3212,6 +3212,27 @@
     "rarity": "SUR",
     "set": "BS10"
   },
+  "BS10-122@2": {
+    "id": "BS10-122@2",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Silent Salt Cookie",
+        "type": "Cookie",
+        "cost": 0,
+        "color": null,
+        "image": "https://cookierunbraverse.com/data/en_storage/A2sc4OIdh5xf8PGbwnRDrQ.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "BS10-122@2-Silent Salt Cookie",
+    "type": "Cookie",
+    "cost": 0,
+    "level": "3",
+    "color": "Purple",
+    "rarity": "P",
+    "set": "BS10"
+  },
   "BS10-123": {
     "id": "BS10-123",
     "isToken": false,
@@ -6635,6 +6656,27 @@
     "rarity": "P",
     "set": "BS9"
   },
+  "BS9-079@3": {
+    "id": "BS9-079@3",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Shadow Milk Cookie",
+        "type": "Cookie",
+        "cost": 0,
+        "color": null,
+        "image": "https://cookierunbraverse.com/data/en_storage/2wpcpdz3njCxS-ggmCPE8A.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "BS9-079@3-Shadow Milk Cookie",
+    "type": "Cookie",
+    "cost": 0,
+    "level": "3",
+    "color": "Blue",
+    "rarity": "P",
+    "set": "BS9"
+  },
   "BS9-080": {
     "id": "BS9-080",
     "isToken": false,
@@ -9449,6 +9491,27 @@
     "rarity": "P",
     "set": "BS8"
   },
+  "BS8-009@3": {
+    "id": "BS8-009@3",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Burning Spice Cookie",
+        "type": "Cookie",
+        "cost": 0,
+        "color": null,
+        "image": "https://cookierunbraverse.com/data/en_storage/vk4RXHIn-7-nM2iZMTbqwg.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "BS8-009@3-Burning Spice Cookie",
+    "type": "Cookie",
+    "cost": 0,
+    "level": "3",
+    "color": "Red",
+    "rarity": "P",
+    "set": "BS8"
+  },
   "BS8-010": {
     "id": "BS8-010",
     "isToken": false,
@@ -10770,6 +10833,27 @@
     "level": "3",
     "color": "Green",
     "rarity": "SUR",
+    "set": "BS8"
+  },
+  "BS8-059@2": {
+    "id": "BS8-059@2",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Mystic Flour Cookie",
+        "type": "Cookie",
+        "cost": 0,
+        "color": null,
+        "image": "https://cookierunbraverse.com/data/en_storage/qLG6BuWGdh3Swvny1oWdCw.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "BS8-059@2-Mystic Flour Cookie",
+    "type": "Cookie",
+    "cost": 0,
+    "level": "3",
+    "color": "Green",
+    "rarity": "P",
     "set": "BS8"
   },
   "BS8-060": {
@@ -25325,6 +25409,27 @@
     "rarity": "SUR",
     "set": "BS3"
   },
+  "BS3-017@2": {
+    "id": "BS3-017@2",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Hollyberry Cookie",
+        "type": "Cookie",
+        "cost": 0,
+        "color": null,
+        "image": "https://cookierunbraverse.com/data/en_storage/FUr835eX1vIhalbeWoB7Nw.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "BS3-017@2-Hollyberry Cookie",
+    "type": "Cookie",
+    "cost": 0,
+    "level": "3",
+    "color": "Red",
+    "rarity": "P",
+    "set": "BS3"
+  },
   "BS3-018": {
     "id": "BS3-018",
     "isToken": false,
@@ -25533,6 +25638,27 @@
     "level": "3",
     "color": "Yellow",
     "rarity": "SUR",
+    "set": "BS3"
+  },
+  "BS3-025@2": {
+    "id": "BS3-025@2",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Golden Cheese Cookie",
+        "type": "Cookie",
+        "cost": 0,
+        "color": null,
+        "image": "https://cookierunbraverse.com/data/en_storage/TzPFeZaZGbgml9zOFi8L-g.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "BS3-025@2-Golden Cheese Cookie",
+    "type": "Cookie",
+    "cost": 0,
+    "level": "3",
+    "color": "Yellow",
+    "rarity": "P",
     "set": "BS3"
   },
   "BS3-026": {
@@ -26352,6 +26478,27 @@
     "level": "3",
     "color": "Green",
     "rarity": "SUR",
+    "set": "BS3"
+  },
+  "BS3-055@2": {
+    "id": "BS3-055@2",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "White Lily Cookie",
+        "type": "Cookie",
+        "cost": 0,
+        "color": null,
+        "image": "https://cookierunbraverse.com/data/en_storage/k-Bszq3BzhkNunGjxZrMzQ.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "BS3-055@2-White Lily Cookie",
+    "type": "Cookie",
+    "cost": 0,
+    "level": "3",
+    "color": "Green",
+    "rarity": "P",
     "set": "BS3"
   },
   "BS3-056": {
@@ -27257,6 +27404,27 @@
     "rarity": "SUR",
     "set": "BS3"
   },
+  "BS3-088@2": {
+    "id": "BS3-088@2",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Pure Vanilla Cookie",
+        "type": "Cookie",
+        "cost": 0,
+        "color": null,
+        "image": "https://cookierunbraverse.com/data/en_storage/68AGgUVjzNfqDAnFWyKoSQ.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "BS3-088@2-Pure Vanilla Cookie",
+    "type": "Cookie",
+    "cost": 0,
+    "level": "3",
+    "color": "Blue",
+    "rarity": "P",
+    "set": "BS3"
+  },
   "BS3-089": {
     "id": "BS3-089",
     "isToken": false,
@@ -27633,6 +27801,27 @@
     "level": "3",
     "color": "Purple",
     "rarity": "SUR",
+    "set": "BS3"
+  },
+  "BS3-100@2": {
+    "id": "BS3-100@2",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Dark Cacao Cookie",
+        "type": "Cookie",
+        "cost": 0,
+        "color": null,
+        "image": "https://cookierunbraverse.com/data/en_storage/kJW2Udkx_pP9cVOHMj2zXQ.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "BS3-100@2-Dark Cacao Cookie",
+    "type": "Cookie",
+    "cost": 0,
+    "level": "3",
+    "color": "Purple",
+    "rarity": "P",
     "set": "BS3"
   },
   "BS3-101": {
@@ -38422,6 +38611,27 @@
       }
     },
     "name": "BS10-049@2-Eternal Sugar Cookie",
+    "type": "Cookie",
+    "cost": 0,
+    "level": "3",
+    "color": "Yellow",
+    "rarity": "P",
+    "set": "BS10"
+  },
+  "BS10-049@3": {
+    "id": "BS10-049@3",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Eternal Sugar Cookie",
+        "type": "Cookie",
+        "cost": 0,
+        "color": null,
+        "image": "https://cookierunbraverse.com/data/en_storage/gAxhkMIBM6QMNqcTz3D9Pw.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "BS10-049@3-Eternal Sugar Cookie",
     "type": "Cookie",
     "cost": 0,
     "level": "3",
