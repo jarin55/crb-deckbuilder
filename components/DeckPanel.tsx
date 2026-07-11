@@ -352,22 +352,62 @@ export default function DeckPanel({
 }
 
 function generateExportText() {
+  const typeOrder = ["Cookie", "Trap", "Item", "Stage", "Flip"]
+
   const lines: string[] = []
 
-  Object.entries(mainDeck).forEach(([id, qty]) => {
-    const card = cards.find((c: any) => c.id === id)
-    if (!card) return
-    lines.push(`${qty} ${formatDisplay(card.display)}`)
+  typeOrder.forEach(type => {
+    const cardsInType = Object.entries(mainDeck)
+      .map(([id, qty]) => {
+        const card = cards.find((c: any) => c.id === id)
+        if (!card || card.type !== type) return null
+        return { ...card, qty }
+      })
+      .filter(Boolean) as any[]
+
+    if (cardsInType.length === 0) return
+
+    // Cookies sorted by Level (highest first)
+    if (type === "Cookie") {
+      cardsInType.sort((a, b) => {
+        if (b.level !== a.level) return b.level - a.level
+        return a.id.localeCompare(b.id)
+      })
+    } else {
+      cardsInType.sort((a, b) => a.id.localeCompare(b.id))
+    }
+
+    lines.push(`~${type}`)
+
+    cardsInType.forEach(card => {
+      lines.push(`${card.qty} ${formatDisplay(card.display)}`)
+    })
+
+    lines.push("")
   })
 
-  Object.entries(extraDeck).forEach(([id, qty]) => {
-    const card = cards.find((c: any) => c.id === id)
-    if (!card) return
-    lines.push(`${qty} ${formatDisplay(card.display)}`)
-  })
+  // Extra Deck
+  const extras = Object.entries(extraDeck)
+    .map(([id, qty]) => {
+      const card = cards.find((c: any) => c.id === id)
+      if (!card) return null
+      return { ...card, qty }
+    })
+    .filter(Boolean) as any[]
 
-  const text = lines.join("\n")
-  setExportText(text)
+  if (extras.length > 0) {
+    extras.sort((a, b) => a.id.localeCompare(b.id))
+
+    lines.push("~Extra")
+
+    extras.forEach(card => {
+      lines.push(`${card.qty} ${formatDisplay(card.display)}`)
+    })
+
+    lines.push("")
+  }
+
+  setExportText(lines.join("\n").trim())
   setShowExportText(true)
 }
 function copyExportText() {
