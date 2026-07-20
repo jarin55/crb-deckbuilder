@@ -39668,6 +39668,258 @@
     "rarity": "P",
     "set": "BS11"
   },
+  "P-151": {
+    "id": "P-151",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Black Sapphire Cookie",
+        "type": "Flip",
+        "cost": 0,
+        "color": null,
+        "image": "https://jarin55.github.io/public/cards/P-151.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "P-151-Black Sapphire Cookie",
+    "type": "Flip",
+    "cost": 0,
+    "level": "1",
+    "color": "Red",
+    "rarity": "P",
+    "set": "P"
+  },
+  "P-152": {
+    "id": "P-152",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Black Sapphire Cookie",
+        "type": "Flip",
+        "cost": 0,
+        "color": null,
+        "image": "https://jarin55.github.io/public/cards/P-152.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "P-152-Black Sapphire Cookie",
+    "type": "Flip",
+    "cost": 0,
+    "level": "1",
+    "color": "Yellow",
+    "rarity": "P",
+    "set": "P"
+  },
+  "P-153": {
+    "id": "P-153",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Black Sapphire Cookie",
+        "type": "Flip",
+        "cost": 0,
+        "color": null,
+        "image": "https://jarin55.github.io/public/cards/P-153.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "P-153-Black Sapphire Cookie",
+    "type": "Flip",
+    "cost": 0,
+    "level": "1",
+    "color": "Green",
+    "rarity": "P",
+    "set": "P"
+  },
+  "P-154": {
+    "id": "P-154",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Black Sapphire Cookie",
+        "type": "Flip",
+        "cost": 0,
+        "color": null,
+        "image": "https://jarin55.github.io/public/cards/P-154.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "P-154-Black Sapphire Cookie",
+    "type": "Flip",
+    "cost": 0,
+    "level": "1",
+    "color": "Blue",
+    "rarity": "P",
+    "set": "P"
+  },
+  "P-155": {
+    "id": "P-155",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Black Sapphire Cookie",
+        "type": "Flip",
+        "cost": 0,
+        "color": null,
+        "image": "https://jarin55.github.io/public/cards/P-155.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "P-155-Black Sapphire Cookie",
+    "type": "Flip",
+    "cost": 0,
+    "level": "1",
+    "color": "Purple",
+    "rarity": "P",
+    "set": "P"
+  },
+  "P-156": {
+    "id": "P-156",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Black Sapphire Cookie",
+        "type": "Flip",
+        "cost": 0,
+        "color": null,
+        "image": "https://jarin55.github.io/public/cards/P-156.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "P-156-Black Sapphire Cookie",
+    "type": "Flip",
+    "cost": 0,
+    "level": "1",
+    "color": "Black",
+    "rarity": "P",
+    "set": "P"
+  },
+  "P-157": {
+    "id": "P-157",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Candy Apple Cookie",
+        "type": "Flip",
+        "cost": 0,
+        "color": null,
+        "image": "https://jarin55.github.io/public/cards/P-157.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "P-157-Candy Apple Cookie",
+    "type": "Flip",
+    "cost": 0,
+    "level": "1",
+    "color": "Red",
+    "rarity": "P",
+    "set": "P"
+  },
+  "P-158": {
+    "id": "P-158",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Candy Apple Cookie",
+        "type": "Flip",
+        "cost": 0,
+        "color": null,
+        "image": "https://jarin55.github.io/public/cards/P-158.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "P-158-Candy Apple Cookie",
+    "type": "Flip",
+    "cost": 0,
+    "level": "1",
+    "color": "Yellow",
+    "rarity": "P",
+    "set": "P"
+  },
+  "P-159": {
+    "id": "P-159",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Candy Apple Cookie",
+        "type": "Flip",
+        "cost": 0,
+        "color": null,
+        "image": "https://jarin55.github.io/public/cards/P-159.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "P-159-Candy Apple Cookie",
+    "type": "Flip",
+    "cost": 0,
+    "level": "1",
+    "color": "Green",
+    "rarity": "P",
+    "set": "P"
+  },
+  "P-160": {
+    "id": "P-160",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Candy Apple Cookie",
+        "type": "Flip",
+        "cost": 0,
+        "color": null,
+        "image": "https://jarin55.github.io/public/cards/P-160.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "P-160-Candy Apple Cookie",
+    "type": "Flip",
+    "cost": 0,
+    "level": "1",
+    "color": "Blue",
+    "rarity": "P",
+    "set": "P"
+  },
+  "P-161": {
+    "id": "P-161",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Candy Apple Cookie",
+        "type": "Flip",
+        "cost": 0,
+        "color": null,
+        "image": "https://jarin55.github.io/public/cards/P-161.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "P-161-Candy Apple Cookie",
+    "type": "Flip",
+    "cost": 0,
+    "level": "1",
+    "color": "Purple",
+    "rarity": "P",
+    "set": "P"
+  },
+  "P-162": {
+    "id": "P-162",
+    "isToken": false,
+    "face": {
+      "front": {
+        "name": "Candy Apple Cookie",
+        "type": "Flip",
+        "cost": 0,
+        "color": null,
+        "image": "https://jarin55.github.io/public/cards/P-162.webp",
+        "isHorizontal": false
+      }
+    },
+    "name": "P-162-Candy Apple Cookie",
+    "type": "Flip",
+    "cost": 0,
+    "level": "1",
+    "color": "Black",
+    "rarity": "P",
+    "set": "P"
+  },
   "ST5-001": {
     "id": "ST5-001",
     "isToken": false,
