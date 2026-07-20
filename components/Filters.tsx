@@ -41,6 +41,7 @@ export default function Filters({ filters, setFilters }: any) {
         <option value="1">1</option>
         <option value="2">2</option>
         <option value="3">3</option>
+        <option value="5">5</option>
       </select>
 
       {/* Color */}
@@ -78,6 +79,7 @@ export default function Filters({ filters, setFilters }: any) {
         <option value="SSR">SSR</option>
         <option value="SUR">SUR</option>
         <option value="EXR">EXR</option>
+        <option value="GXR">GXR</option>
         <option value="P">P</option>
       </select>
 
