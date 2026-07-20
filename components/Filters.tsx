@@ -57,7 +57,8 @@ export default function Filters({ filters, setFilters }: any) {
         <option value="Yellow">Yellow</option>
         <option value="Green">Green</option>
         <option value="Purple">Purple</option>
-        <option value="Colorless">Colorless</option>
+        <option value="Black">Black</option>
+        <option value="Pure">Pure</option>
       </select>
 
       {/* Rarity */}
