@@ -343,9 +343,14 @@ export default function DeckPanel({
   function formatDisplay(display: string) {
   const parts = display.split("-")
 
-  if (parts.length < 3) return display // fallback if unexpected format
+  if (parts.length < 3) return display
 
-  const code = `${parts[0]}-${parts[1]}`
+  // Build the card code
+  let code = `${parts[0]}-${parts[1]}`
+
+  // Remove any @ suffix (e.g. @1, @2, @3...)
+  code = code.replace(/@\d+$/, "")
+
   const name = parts.slice(2).join("-")
 
   return `${name} [${code}]`
