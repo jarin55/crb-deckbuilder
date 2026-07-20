@@ -41,7 +41,7 @@ export default function CardGrid({ cards, filters, addCard }: any) {
             onMouseLeave={() => setHovered(null)}
           >
             <img
-              src={`/cards/${card.id}.jpg`}
+              src={`/cards/${card.id}.webp`}
               className="w-full cursor-pointer hover:scale-105 transition-transform duration-200"
               onClick={() => addCard(card)}
             />

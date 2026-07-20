@@ -294,7 +294,7 @@ export default function DeckPanel({
     let col = 0
 
     for (const card of orderedMain) {
-      const img = await loadImage(`/cards/${card.id}.jpg`)
+      const img = await loadImage(`/cards/${card.id}.webp`)
       const x = padding + col * (cardWidth + padding)
       const y = titleSpace + padding + row * (cardHeight + padding)
 
@@ -319,7 +319,7 @@ export default function DeckPanel({
     let extraRow = 0
 
     for (const [id, qty] of Object.entries(extraDeck)) {
-      const img = await loadImage(`/cards/${id}.jpg`)
+      const img = await loadImage(`/cards/${id}.webp`)
       const x = extraX
       const y = titleSpace + padding + extraRow * (cardHeight + padding)
 
@@ -472,7 +472,7 @@ function copyExportText() {
                 <div key={card.id} className="bg-gray-800 p-2 rounded-lg">
 
                   <img
-                    src={`/cards/${card.id}.jpg`}
+                    src={`/cards/${card.id}.webp`}
                     className="w-full rounded-md shadow-lg"
                   />
 
