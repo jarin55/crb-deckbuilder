@@ -512,7 +512,7 @@ function copyExportText() {
               <div key={id} className="bg-gray-800 p-2 rounded-lg">
 
                 <img
-                  src={`/cards/${id}.jpg`}
+                  src={`/cards/${id}.webp`}
                   className="w-full rounded-md shadow-lg"
                 />
 
