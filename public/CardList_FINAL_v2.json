@@ -6819,7 +6819,7 @@
     "name": "ST10-013-Little Star",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "ST10"
@@ -6840,7 +6840,7 @@
     "name": "ST10-014-Lunar Compendium",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "ST10"
@@ -6861,7 +6861,7 @@
     "name": "ST10-015-Essence of Moonlight",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "ST10"
@@ -6882,7 +6882,7 @@
     "name": "ST10-016-Delicate Glass Flower",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "ST10"
@@ -6903,7 +6903,7 @@
     "name": "ST10-017-Inside the Clock Tower",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "ST10"
@@ -6924,7 +6924,7 @@
     "name": "ST10-018-Reunion of Star and Moon",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "ST10"
@@ -6945,7 +6945,7 @@
     "name": "ST10-019-Sleeping Moon",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "ST10"
@@ -6966,7 +6966,7 @@
     "name": "ST10-020-Wizard Archives",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "ST10"
@@ -7239,7 +7239,7 @@
     "name": "ST9-013-Shimmering Moonlit Coral",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "ST9"
@@ -7260,7 +7260,7 @@
     "name": "ST9-014-Glittering Pearl Shell",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "ST9"
@@ -7281,7 +7281,7 @@
     "name": "ST9-015-Essence of the Ocean",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "ST9"
@@ -7302,7 +7302,7 @@
     "name": "ST9-016-Bubble Wave Shell",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "ST9"
@@ -7323,7 +7323,7 @@
     "name": "ST9-017-Revelation of the Seas",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "ST9"
@@ -7344,7 +7344,7 @@
     "name": "ST9-018-Tower of Frozen Waves",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "ST9"
@@ -7365,7 +7365,7 @@
     "name": "ST9-019-Curse of the Seas",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "ST9"
@@ -7386,7 +7386,7 @@
     "name": "ST9-020-Tearcrown",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "ST9"
@@ -7764,7 +7764,7 @@
     "name": "BS9-010-Shadow Milk Cookie",
     "type": "Extra",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "UR",
     "set": "BS9"
@@ -7785,7 +7785,7 @@
     "name": "BS9-010@1-Shadow Milk Cookie",
     "type": "Extra",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "SUR",
     "set": "BS9"
@@ -8079,7 +8079,7 @@
     "name": "BS9-019-Juicy Stamina Jellies",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "BS9"
@@ -8100,7 +8100,7 @@
     "name": "BS9-020-Fateful Cookie Cutter",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "BS9"
@@ -8121,7 +8121,7 @@
     "name": "BS9-021-Stolen Light of Truth",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "BS9"
@@ -8142,7 +8142,7 @@
     "name": "BS9-022-Paper Puppet Troupe",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "BS9"
@@ -8163,7 +8163,7 @@
     "name": "BS9-023-Atelier of Lies",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "BS9"
@@ -8436,7 +8436,7 @@
     "name": "BS9-030-Shadow Milk Cookie",
     "type": "Extra",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "UR",
     "set": "BS9"
@@ -8457,7 +8457,7 @@
     "name": "BS9-030@1-Shadow Milk Cookie",
     "type": "Extra",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "SUR",
     "set": "BS9"
@@ -8856,7 +8856,7 @@
     "name": "BS9-043-Heart Stained With Lies",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "BS9"
@@ -8877,7 +8877,7 @@
     "name": "BS9-044-Shadow Milk Cookie Doll",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "BS9"
@@ -8898,7 +8898,7 @@
     "name": "BS9-045-Overtaken Other-Realm",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "BS9"
@@ -8919,7 +8919,7 @@
     "name": "BS9-046-Fragmented Soul",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "BS9"
@@ -8940,7 +8940,7 @@
     "name": "BS9-047-Yogurt River of Rebirth",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "BS9"
@@ -9213,7 +9213,7 @@
     "name": "BS9-055-Shadow Milk Cookie",
     "type": "Extra",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "UR",
     "set": "BS9"
@@ -9234,7 +9234,7 @@
     "name": "BS9-055@1-Shadow Milk Cookie",
     "type": "Extra",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "SUR",
     "set": "BS9"
@@ -9549,7 +9549,7 @@
     "name": "BS9-066-Meat Jelly",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "BS9"
@@ -9570,7 +9570,7 @@
     "name": "BS9-067-Concealer of Truth",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "BS9"
@@ -9591,7 +9591,7 @@
     "name": "BS9-068-Radiant Light of Protection",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "BS9"
@@ -9612,7 +9612,7 @@
     "name": "BS9-069-Broken Seal",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "BS9"
@@ -9633,7 +9633,7 @@
     "name": "BS9-070-Puppet Theater Stage",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "BS9"
@@ -10242,7 +10242,7 @@
     "name": "BS9-088-Pure Vanilla Cookie",
     "type": "Extra",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "UR",
     "set": "BS9"
@@ -10263,7 +10263,7 @@
     "name": "BS9-088@1-Pure Vanilla Cookie",
     "type": "Extra",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "SUR",
     "set": "BS9"
@@ -10284,7 +10284,7 @@
     "name": "BS9-088@2-Pure Vanilla Cookie",
     "type": "Extra",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "EXR",
     "set": "BS9"
@@ -10347,7 +10347,7 @@
     "name": "BS9-090-Storybook of Lies",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "BS9"
@@ -10368,7 +10368,7 @@
     "name": "BS9-091-Light of Deceit",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "BS9"
@@ -10389,7 +10389,7 @@
     "name": "BS9-092-Soul Jam: Light of Deceit",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "SR",
     "set": "BS9"
@@ -10410,7 +10410,7 @@
     "name": "BS9-092@1-Soul Jam: Light of Deceit",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "SSR",
     "set": "BS9"
@@ -10431,7 +10431,7 @@
     "name": "BS9-093-Reversed Prophecy",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "BS9"
@@ -10452,7 +10452,7 @@
     "name": "BS9-094-Shadow Milk Cookie's Tarot Card",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "BS9"
@@ -10473,7 +10473,7 @@
     "name": "BS9-095-Spire of Deceit",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "BS9"
@@ -10767,7 +10767,7 @@
     "name": "BS9-102-Shadow Milk Cookie",
     "type": "Extra",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "UR",
     "set": "BS9"
@@ -10788,7 +10788,7 @@
     "name": "BS9-102@1-Shadow Milk Cookie",
     "type": "Extra",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "SUR",
     "set": "BS9"
@@ -11145,7 +11145,7 @@
     "name": "BS9-114-Flipped Coin",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "BS9"
@@ -11166,7 +11166,7 @@
     "name": "BS9-115-Wolf in Sheep's Clothing",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "BS9"
@@ -11187,7 +11187,7 @@
     "name": "BS9-116-Light of False Truths",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "BS9"
@@ -11208,7 +11208,7 @@
     "name": "BS9-117-Truth Stained With Lies",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "BS9"
@@ -11229,7 +11229,7 @@
     "name": "BS9-118-Endless Game of Chess",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "BS9"
@@ -11271,7 +11271,7 @@
     "name": "ST8-002-Muscle Cookie",
     "type": "Flip",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "C",
     "set": "ST8"
@@ -11355,7 +11355,7 @@
     "name": "ST8-006-Basil Pesto Cookie",
     "type": "Flip",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "C",
     "set": "ST8"
@@ -11376,7 +11376,7 @@
     "name": "ST8-007-Blue Slushy Cookie",
     "type": "Flip",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "C (홀로)",
     "set": "ST8"
@@ -11418,7 +11418,7 @@
     "name": "ST8-009-Cucumber Cookie",
     "type": "Flip",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "C",
     "set": "ST8"
@@ -11502,7 +11502,7 @@
     "name": "ST8-013-Windgrass",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "ST8"
@@ -11523,7 +11523,7 @@
     "name": "ST8-014-Cape of the Vanquisher",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "ST8"
@@ -11544,7 +11544,7 @@
     "name": "ST8-015-Essence of the Tempest",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "ST8"
@@ -11565,7 +11565,7 @@
     "name": "ST8-016-Wind's Grace Earrings",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "ST8"
@@ -11586,7 +11586,7 @@
     "name": "ST8-017-Hindering Darkness",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "ST8"
@@ -11607,7 +11607,7 @@
     "name": "ST8-018-Piercing Arrow of Purity",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "ST8"
@@ -11628,7 +11628,7 @@
     "name": "ST8-019-Bad Omen",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "ST8"
@@ -11649,7 +11649,7 @@
     "name": "ST8-020-Dark Enchantress Laboratory",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "ST8"
@@ -11712,7 +11712,7 @@
     "name": "ST7-003-Rainbow Sherbet Cookie",
     "type": "Flip",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "C",
     "set": "ST7"
@@ -11754,7 +11754,7 @@
     "name": "ST7-005-Caramel Choux Cookie",
     "type": "Flip",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "C",
     "set": "ST7"
@@ -11775,7 +11775,7 @@
     "name": "ST7-006-Cream Puff Cookie",
     "type": "Flip",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "C",
     "set": "ST7"
@@ -11796,7 +11796,7 @@
     "name": "ST7-007-Fairy Cookie",
     "type": "Flip",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "C",
     "set": "ST7"
@@ -11922,7 +11922,7 @@
     "name": "ST7-013-Miraculous Nutrient Ampoule",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "ST7"
@@ -11943,7 +11943,7 @@
     "name": "ST7-014-Essence of Rejuvenation",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "ST7"
@@ -11964,7 +11964,7 @@
     "name": "ST7-015-Budding Future",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "ST7"
@@ -11985,7 +11985,7 @@
     "name": "ST7-016-Tightly Tied Vine",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "ST7"
@@ -12006,7 +12006,7 @@
     "name": "ST7-017-Vined Cavern",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "ST7"
@@ -12027,7 +12027,7 @@
     "name": "ST7-018-Millennial Tree Cookie's Gift",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "ST7"
@@ -12048,7 +12048,7 @@
     "name": "ST7-019-Millennial Jade Deer's Wrath",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "ST7"
@@ -12069,7 +12069,7 @@
     "name": "ST7-020-Forest of Life",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "ST7"
@@ -12195,7 +12195,7 @@
     "name": "ST6-006-Cherry Cookie",
     "type": "Flip",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "C",
     "set": "ST6"
@@ -12216,7 +12216,7 @@
     "name": "ST6-007-Chili Pepper Cookie",
     "type": "Flip",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "C",
     "set": "ST6"
@@ -12237,7 +12237,7 @@
     "name": "ST6-008-Candy Apple Cookie",
     "type": "Flip",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "C",
     "set": "ST6"
@@ -12342,7 +12342,7 @@
     "name": "ST6-013-Hot Jellyco Missile",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "ST6"
@@ -12363,7 +12363,7 @@
     "name": "ST6-014-Essence of Conflagration",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "ST6"
@@ -12384,7 +12384,7 @@
     "name": "ST6-015-Fire Spirit Cookie's Staff",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "ST6"
@@ -12405,7 +12405,7 @@
     "name": "ST6-016-Dragon's Breath",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "ST6"
@@ -12426,7 +12426,7 @@
     "name": "ST6-017-Restored Power of Fire",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "ST6"
@@ -12447,7 +12447,7 @@
     "name": "ST6-018-Frozen Flame",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "ST6"
@@ -12468,7 +12468,7 @@
     "name": "ST6-019-Power Unleashed",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "ST6"
@@ -12489,7 +12489,7 @@
     "name": "ST6-020-Into the Depths",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "ST6"
@@ -12615,7 +12615,7 @@
     "name": "BS8-005-Avatar of Ruin",
     "type": "Extra",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "UR",
     "set": "BS8"
@@ -12636,7 +12636,7 @@
     "name": "BS8-005@1-Avatar of Ruin",
     "type": "Extra",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "SUR",
     "set": "BS8"
@@ -13098,7 +13098,7 @@
     "name": "BS8-021-Soul Jam: Light of Destruction",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "SR",
     "set": "BS8"
@@ -13119,7 +13119,7 @@
     "name": "BS8-021@1-Soul Jam: Light of Destruction",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "SSR",
     "set": "BS8"
@@ -13140,7 +13140,7 @@
     "name": "BS8-022-Cake Hound's Crown",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "BS8"
@@ -13161,7 +13161,7 @@
     "name": "BS8-023-Shadow of the Destroyer",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "BS8"
@@ -13182,7 +13182,7 @@
     "name": "BS8-024-Land of Fire & Ruin",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "BS8"
@@ -13203,7 +13203,7 @@
     "name": "BS8-024@1-Land of Fire & Ruin",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "P",
     "set": "BS8"
@@ -13224,7 +13224,7 @@
     "name": "BS8-025-Tower of Sweet Chaos",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "BS8"
@@ -13287,7 +13287,7 @@
     "name": "BS8-027-Golden Cheese Cookie",
     "type": "Extra",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "UR",
     "set": "BS8"
@@ -13308,7 +13308,7 @@
     "name": "BS8-027@1-Golden Cheese Cookie",
     "type": "Extra",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "SUR",
     "set": "BS8"
@@ -13329,7 +13329,7 @@
     "name": "BS8-027@2-Golden Cheese Cookie",
     "type": "Extra",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "EXR",
     "set": "BS8"
@@ -13791,7 +13791,7 @@
     "name": "BS8-046-Surprise! Lassi Jar",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "BS8"
@@ -13812,7 +13812,7 @@
     "name": "BS8-047-Puny Strength",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "BS8"
@@ -13833,7 +13833,7 @@
     "name": "BS8-048-Kulfi Legends",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "BS8"
@@ -13854,7 +13854,7 @@
     "name": "BS8-049-Simmering Lassi Springs",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "BS8"
@@ -13875,7 +13875,7 @@
     "name": "BS8-050-City of Eternal Gold",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "BS8"
@@ -13896,7 +13896,7 @@
     "name": "BS8-050@1-City of Eternal Gold",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "P",
     "set": "BS8"
@@ -14421,7 +14421,7 @@
     "name": "BS8-069-Peak of Apathy",
     "type": "Extra",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "UR",
     "set": "BS8"
@@ -14442,7 +14442,7 @@
     "name": "BS8-069@1-Peak of Apathy",
     "type": "Extra",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "SUR",
     "set": "BS8"
@@ -14484,7 +14484,7 @@
     "name": "BS8-071-Peach Baos",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "BS8"
@@ -14505,7 +14505,7 @@
     "name": "BS8-072-Soul Jam: Light of Apathy",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "SR",
     "set": "BS8"
@@ -14526,7 +14526,7 @@
     "name": "BS8-072@1-Soul Jam: Light of Apathy",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "SSR",
     "set": "BS8"
@@ -14547,7 +14547,7 @@
     "name": "BS8-073-Noodle Cocoon",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "BS8"
@@ -14568,7 +14568,7 @@
     "name": "BS8-074-White Flour Fog",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "BS8"
@@ -14589,7 +14589,7 @@
     "name": "BS8-075-The Ivory Pagoda",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "BS8"
@@ -14610,7 +14610,7 @@
     "name": "BS8-075@1-The Ivory Pagoda",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "P",
     "set": "BS8"
@@ -15030,7 +15030,7 @@
     "name": "BS8-090-Will of Nature",
     "type": "Extra",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "UR",
     "set": "BS8"
@@ -15051,7 +15051,7 @@
     "name": "BS8-090@1-Will of Nature",
     "type": "Extra",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "SUR",
     "set": "BS8"
@@ -15177,7 +15177,7 @@
     "name": "BS8-096-Warm Wind Flower",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "BS8"
@@ -15198,7 +15198,7 @@
     "name": "BS8-097-Heartfelt Light",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "BS8"
@@ -15219,7 +15219,7 @@
     "name": "BS8-098-Warmth of the Snowfield",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "BS8"
@@ -15240,7 +15240,7 @@
     "name": "BS8-099-Frozen Mountain Depths",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "BS8"
@@ -15261,7 +15261,7 @@
     "name": "BS8-100-Snowfall Lantern Tree",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "BS8"
@@ -15282,7 +15282,7 @@
     "name": "BS8-100@1-Snowfall Lantern Tree",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "P",
     "set": "BS8"
@@ -15387,7 +15387,7 @@
     "name": "BS8-104-Dark Cacao Cookie",
     "type": "Extra",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "UR",
     "set": "BS8"
@@ -15408,7 +15408,7 @@
     "name": "BS8-104@1-Dark Cacao Cookie",
     "type": "Extra",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "SUR",
     "set": "BS8"
@@ -15429,7 +15429,7 @@
     "name": "BS8-104@2-Dark Cacao Cookie",
     "type": "Extra",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "EXR",
     "set": "BS8"
@@ -15912,7 +15912,7 @@
     "name": "BS8-121-Black Concoction",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "BS8"
@@ -15933,7 +15933,7 @@
     "name": "BS8-122-Milk Cart",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "BS8"
@@ -15954,7 +15954,7 @@
     "name": "BS8-123-Dark Resolution",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "BS8"
@@ -15975,7 +15975,7 @@
     "name": "BS8-124-Glorious Return",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "BS8"
@@ -15996,7 +15996,7 @@
     "name": "BS8-125-The Days of Resolution and Dignity",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "BS8"
@@ -16017,7 +16017,7 @@
     "name": "BS8-125@1-The Days of Resolution and Dignity",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "P",
     "set": "BS8"
@@ -16626,7 +16626,7 @@
     "name": "BS7-020-Scovilsky Manuscript",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "BS7"
@@ -16647,7 +16647,7 @@
     "name": "BS7-021-Labyrinth Golem Attack",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "BS7"
@@ -16668,7 +16668,7 @@
     "name": "BS7-022-Scovillia Quarters",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "BS7"
@@ -17193,7 +17193,7 @@
     "name": "BS7-041-The Key to Unbreakable Faith",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "BS7"
@@ -17214,7 +17214,7 @@
     "name": "BS7-042-Valiant Victor's Salvation",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "BS7"
@@ -17235,7 +17235,7 @@
     "name": "BS7-043-Crème Knights' Quarters",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "BS7"
@@ -17781,7 +17781,7 @@
     "name": "BS7-063-Grand Cookie Games Trophy",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "BS7"
@@ -17802,7 +17802,7 @@
     "name": "BS7-064-Cookie Windmill",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "BS7"
@@ -17823,7 +17823,7 @@
     "name": "BS7-065-Cookie Games Stadium",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "BS7"
@@ -18327,7 +18327,7 @@
     "name": "BS7-084-The Sunblade",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "BS7"
@@ -18348,7 +18348,7 @@
     "name": "BS7-085-A Victory For You",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "BS7"
@@ -18369,7 +18369,7 @@
     "name": "BS7-086-Temple of the Sun Central Arena",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "BS7"
@@ -18894,7 +18894,7 @@
     "name": "BS7-105-Golem Core",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "BS7"
@@ -18915,7 +18915,7 @@
     "name": "BS7-106-Securing the First Victory",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "BS7"
@@ -18936,7 +18936,7 @@
     "name": "BS7-107-Parfaedia Quarters",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "BS7"
@@ -18957,7 +18957,7 @@
     "name": "BS7-108-Arena of Glory",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Pure",
     "rarity": "SR",
     "set": "BS7"
@@ -18978,7 +18978,7 @@
     "name": "BS7-108@1-Arena of Glory",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Pure",
     "rarity": "EXR",
     "set": "BS7"
@@ -19482,7 +19482,7 @@
     "name": "BS6-019-Squishy Jelly Watch",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "BS6"
@@ -19503,7 +19503,7 @@
     "name": "BS6-020-Tonic Spray",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "BS6"
@@ -19524,7 +19524,7 @@
     "name": "BS6-020@1-Tonic Spray",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "P",
     "set": "BS6"
@@ -19545,7 +19545,7 @@
     "name": "BS6-021-TBD Hallway",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "BS6"
@@ -20112,7 +20112,7 @@
     "name": "BS6-041-Hourglass of Aeternus Tempora",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "BS6"
@@ -20133,7 +20133,7 @@
     "name": "BS6-042-Clever Advice",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "BS6"
@@ -20154,7 +20154,7 @@
     "name": "BS6-043-Timecraft Garage",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "BS6"
@@ -20658,7 +20658,7 @@
     "name": "BS6-062-Time Rend Scissors",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "BS6"
@@ -20679,7 +20679,7 @@
     "name": "BS6-063-Into a Time Pocket...",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "BS6"
@@ -20700,7 +20700,7 @@
     "name": "BS6-064-Broken Central Clock",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "BS6"
@@ -21246,7 +21246,7 @@
     "name": "BS6-084-Time Manipulator",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "BS6"
@@ -21267,7 +21267,7 @@
     "name": "BS6-085-Destruction of a Pastless Future",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "BS6"
@@ -21288,7 +21288,7 @@
     "name": "BS6-086-Messy TBD Director's Office",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "BS6"
@@ -21813,7 +21813,7 @@
     "name": "BS6-105-Butterfly Key Relic",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "BS6"
@@ -21834,7 +21834,7 @@
     "name": "BS6-106-Peak Engineer Performance",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "BS6"
@@ -21855,7 +21855,7 @@
     "name": "BS6-107-TBD Machine Room",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "BS6"
@@ -22401,7 +22401,7 @@
     "name": "BS5-020-Crimson Dragon Mask",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "BS5"
@@ -22422,7 +22422,7 @@
     "name": "BS5-021-Draconic Aura",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "BS5"
@@ -22443,7 +22443,7 @@
     "name": "BS5-022-Pitaya Dragon Cookie's Nest",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "BS5"
@@ -22989,7 +22989,7 @@
     "name": "BS5-042-Sniffly Cocoa Palm",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "BS5"
@@ -23010,7 +23010,7 @@
     "name": "BS5-043-Seasick Canoeing",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "BS5"
@@ -23031,7 +23031,7 @@
     "name": "BS5-044-Ananas Dragon Cookie's Nest",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "BS5"
@@ -23619,7 +23619,7 @@
     "name": "BS5-064-Dragon Orb",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "BS5"
@@ -23640,7 +23640,7 @@
     "name": "BS5-065-Petrification",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "BS5"
@@ -23661,7 +23661,7 @@
     "name": "BS5-066-Longan Palace",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "BS5"
@@ -24207,7 +24207,7 @@
     "name": "BS5-086-Tales of the Lotus",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "BS5"
@@ -24228,7 +24228,7 @@
     "name": "BS5-087-Dino Greetings",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "BS5"
@@ -24249,7 +24249,7 @@
     "name": "BS5-088-Lotus Palace",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "BS5"
@@ -24837,7 +24837,7 @@
     "name": "BS5-108-Rambirdtan Handler Glove",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "BS5"
@@ -24858,7 +24858,7 @@
     "name": "BS5-109-Charmed Miners",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "BS5"
@@ -24879,7 +24879,7 @@
     "name": "BS5-110-Lychee Dragon Cookie's Cave",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "BS5"
@@ -24900,7 +24900,7 @@
     "name": "BS5-111-Wrath of the Dragons",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Pure",
     "rarity": "UR",
     "set": "BS5"
@@ -24921,7 +24921,7 @@
     "name": "BS5-111@1-Wrath of the Dragons",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Pure",
     "rarity": "EXR",
     "set": "BS5"
@@ -25467,7 +25467,7 @@
     "name": "BS4-018-Magma Pendulum",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "BS4"
@@ -25488,7 +25488,7 @@
     "name": "BS4-019-Ring of Eternal Flame",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "BS4"
@@ -25509,7 +25509,7 @@
     "name": "BS4-020-Essence of Conflagration",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "SR",
     "set": "BS4"
@@ -25530,7 +25530,7 @@
     "name": "BS4-020@1-Essence of Conflagration",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "SSR",
     "set": "BS4"
@@ -25551,7 +25551,7 @@
     "name": "BS4-021-Battle on the Edge",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "BS4"
@@ -25572,7 +25572,7 @@
     "name": "BS4-022-Scovillia Training Grounds",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "BS4"
@@ -26118,7 +26118,7 @@
     "name": "BS4-040-Essence of Rejuvenation",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "SR",
     "set": "BS4"
@@ -26139,7 +26139,7 @@
     "name": "BS4-040@1-Essence of Rejuvenation",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "SSR",
     "set": "BS4"
@@ -26160,7 +26160,7 @@
     "name": "BS4-041-Millennial Twig",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "BS4"
@@ -26181,7 +26181,7 @@
     "name": "BS4-042-Millennial Jade Deer",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "BS4"
@@ -26202,7 +26202,7 @@
     "name": "BS4-042@2-Millennial Jade Deer",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "P",
     "set": "BS4"
@@ -26223,7 +26223,7 @@
     "name": "BS4-043-Heaven-Splitting Lightning",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "BS4"
@@ -26244,7 +26244,7 @@
     "name": "BS4-044-Millennial Temple",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "BS4"
@@ -26832,7 +26832,7 @@
     "name": "BS4-062-Wind Gems",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "SR",
     "set": "BS4"
@@ -26853,7 +26853,7 @@
     "name": "BS4-062@1-Wind Gems",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "SSR",
     "set": "BS4"
@@ -26874,7 +26874,7 @@
     "name": "BS4-063-Swan Feather Dreamcatcher",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "BS4"
@@ -26895,7 +26895,7 @@
     "name": "BS4-064-Night Raven's Arrow",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "BS4"
@@ -26916,7 +26916,7 @@
     "name": "BS4-065-Spring Festival",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "BS4"
@@ -26937,7 +26937,7 @@
     "name": "BS4-066-Dessert Paradise",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "BS4"
@@ -27504,7 +27504,7 @@
     "name": "BS4-084-Heart of the Deep Sea",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "BS4"
@@ -27525,7 +27525,7 @@
     "name": "BS4-085-Tide Shards",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "SR",
     "set": "BS4"
@@ -27546,7 +27546,7 @@
     "name": "BS4-085@1-Tide Shards",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "SSR",
     "set": "BS4"
@@ -27567,7 +27567,7 @@
     "name": "BS4-086-Weeping Cries of the Deep",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "BS4"
@@ -27588,7 +27588,7 @@
     "name": "BS4-087-Mermaid's Tale",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "BS4"
@@ -27609,7 +27609,7 @@
     "name": "BS4-088-Tower of Frozen Waves",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "BS4"
@@ -28218,7 +28218,7 @@
     "name": "BS4-106-Butterfly Brooch",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "BS4"
@@ -28239,7 +28239,7 @@
     "name": "BS4-107-Moonlight Shards",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "SR",
     "set": "BS4"
@@ -28260,7 +28260,7 @@
     "name": "BS4-107@1-Moonlight Shards",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "SSR",
     "set": "BS4"
@@ -28281,7 +28281,7 @@
     "name": "BS4-108-Plasma Crystal Ball",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "BS4"
@@ -28302,7 +28302,7 @@
     "name": "BS4-109-Slumbering Moon's Invitation",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "BS4"
@@ -28323,7 +28323,7 @@
     "name": "BS4-110-City of Wizards",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "BS4"
@@ -28344,7 +28344,7 @@
     "name": "BS4-111-Cookies of Legend",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Pure",
     "rarity": "UR",
     "set": "BS4"
@@ -28365,7 +28365,7 @@
     "name": "BS4-111@1-Cookies of Legend",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Pure",
     "rarity": "EXR",
     "set": "BS4"
@@ -28911,7 +28911,7 @@
     "name": "BS3-018-Mushroom Spore Punch",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "BS3"
@@ -28932,7 +28932,7 @@
     "name": "BS3-019-Soul Jam: Light of Passion",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "SR",
     "set": "BS3"
@@ -28953,7 +28953,7 @@
     "name": "BS3-019@1-Soul Jam: Light of Passion",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "SSR",
     "set": "BS3"
@@ -28974,7 +28974,7 @@
     "name": "BS3-020-Miniature Dragon Boat",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "BS3"
@@ -28995,7 +28995,7 @@
     "name": "BS3-021-Oath on the Shield",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "BS3"
@@ -29016,7 +29016,7 @@
     "name": "BS3-022-Banquet of Victory",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "BS3"
@@ -29037,7 +29037,7 @@
     "name": "BS3-023-Passionate Hollyberry Kingdom",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "BS3"
@@ -29058,7 +29058,7 @@
     "name": "BS3-024-Dragon's Valley",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "BS3"
@@ -29604,7 +29604,7 @@
     "name": "BS3-042-Golden Cheese Guardian Golem",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "BS3"
@@ -29625,7 +29625,7 @@
     "name": "BS3-043-Soul Jam: Light of Abundance",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "SR",
     "set": "BS3"
@@ -29646,7 +29646,7 @@
     "name": "BS3-043@1-Soul Jam: Light of Abundance",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "SSR",
     "set": "BS3"
@@ -29667,7 +29667,7 @@
     "name": "BS3-044-Cheesepad Tablet",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "BS3"
@@ -29688,7 +29688,7 @@
     "name": "BS3-045-Golden Monarch's Counterattack",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "BS3"
@@ -29709,7 +29709,7 @@
     "name": "BS3-046-Golden Cheese Colosseum",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "BS3"
@@ -29730,7 +29730,7 @@
     "name": "BS3-047-Kingdom of Eternal Abundance",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "BS3"
@@ -29751,7 +29751,7 @@
     "name": "BS3-048-Golden City's Control Chamber",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "BS3"
@@ -30276,7 +30276,7 @@
     "name": "BS3-066-Soul Jam: Light of Freedom",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "SR",
     "set": "BS3"
@@ -30297,7 +30297,7 @@
     "name": "BS3-066@1-Soul Jam: Light of Freedom",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "SSR",
     "set": "BS3"
@@ -30318,7 +30318,7 @@
     "name": "BS3-067-Faerie Kingdom's Music",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "BS3"
@@ -30339,7 +30339,7 @@
     "name": "BS3-068-Elder Faerie's Sword",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "BS3"
@@ -30360,7 +30360,7 @@
     "name": "BS3-069-The New Guardian's Power",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "BS3"
@@ -30381,7 +30381,7 @@
     "name": "BS3-069@1-The New Guardian's Power",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "P",
     "set": "BS3"
@@ -30402,7 +30402,7 @@
     "name": "BS3-070-Puppet Theater of Chaos",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "BS3"
@@ -30423,7 +30423,7 @@
     "name": "BS3-071-Ancient Silver Tree",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "BS3"
@@ -30444,7 +30444,7 @@
     "name": "BS3-072-Mystical Faerie Kingdom",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "BS3"
@@ -30990,7 +30990,7 @@
     "name": "BS3-090-Sword of Radiant Light",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "BS3"
@@ -31011,7 +31011,7 @@
     "name": "BS3-091-Soul Jam: Light of Truth",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "SR",
     "set": "BS3"
@@ -31032,7 +31032,7 @@
     "name": "BS3-091@1-Soul Jam: Light of Truth",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "SSR",
     "set": "BS3"
@@ -31053,7 +31053,7 @@
     "name": "BS3-092-Old Vanilla Orchid Locket",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "BS3"
@@ -31074,7 +31074,7 @@
     "name": "BS3-093-Convocation of Elders",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "BS3"
@@ -31095,7 +31095,7 @@
     "name": "BS3-094-Radiant Coronation",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "BS3"
@@ -31116,7 +31116,7 @@
     "name": "BS3-095-Glorious Crème Republic",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "BS3"
@@ -31137,7 +31137,7 @@
     "name": "BS3-095@1-Glorious Crème Republic",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "P",
     "set": "BS3"
@@ -31158,7 +31158,7 @@
     "name": "BS3-096-Peaceful Vanilla Kingdom",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "BS3"
@@ -31704,7 +31704,7 @@
     "name": "BS3-114-Bittersweet Incense",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "BS3"
@@ -31725,7 +31725,7 @@
     "name": "BS3-115-Soul Jam: Light of Resolution",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "SR",
     "set": "BS3"
@@ -31746,7 +31746,7 @@
     "name": "BS3-115@1-Soul Jam: Light of Resolution",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "SSR",
     "set": "BS3"
@@ -31767,7 +31767,7 @@
     "name": "BS3-116-First Watcher's Bow",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "BS3"
@@ -31788,7 +31788,7 @@
     "name": "BS3-117-Chocolate Altar of the Fallen",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "BS3"
@@ -31809,7 +31809,7 @@
     "name": "BS3-118-Founding Resolution",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "BS3"
@@ -31830,7 +31830,7 @@
     "name": "BS3-119-Roiling Licorice Sea",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "BS3"
@@ -31851,7 +31851,7 @@
     "name": "BS3-120-Resolute Dark Cacao Kingdom",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "BS3"
@@ -31872,7 +31872,7 @@
     "name": "BS3-121-Age of Heroes and Kingdoms",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Pure",
     "rarity": "UR",
     "set": "BS3"
@@ -31893,7 +31893,7 @@
     "name": "BS3-121@1-Age of Heroes and Kingdoms",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Pure",
     "rarity": "SUR",
     "set": "BS3"
@@ -31914,7 +31914,7 @@
     "name": "BS3-121@2-Age of Heroes and Kingdoms",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Pure",
     "rarity": "EXR",
     "set": "BS3"
@@ -31935,7 +31935,7 @@
     "name": "BS3-121@5-Age of Heroes and Kingdoms",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Pure",
     "rarity": "P",
     "set": "BS3"
@@ -31956,7 +31956,7 @@
     "name": "BS3-121@6-Age of Heroes and Kingdoms",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Pure",
     "rarity": "P",
     "set": "BS3"
@@ -31977,7 +31977,7 @@
     "name": "BS3-121@7-Age of Heroes and Kingdoms",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Pure",
     "rarity": "P",
     "set": "BS3"
@@ -31998,7 +31998,7 @@
     "name": "BS3-121@8-Age of Heroes and Kingdoms",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Pure",
     "rarity": "P",
     "set": "BS3"
@@ -32145,7 +32145,7 @@
     "name": "BS2-006-Prickly Cacti Gloves",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "BS2"
@@ -32166,7 +32166,7 @@
     "name": "BS2-007-Prickly Cactus Bat",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "BS2"
@@ -32187,7 +32187,7 @@
     "name": "BS2-007@1-Prickly Cactus Bat",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "P",
     "set": "BS2"
@@ -32334,7 +32334,7 @@
     "name": "BS2-013-Wind-Up Pocket Watch",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "BS2"
@@ -32355,7 +32355,7 @@
     "name": "BS2-014-Erratic Yakgwa Robot",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "BS2"
@@ -32502,7 +32502,7 @@
     "name": "BS2-020-Carrot Jelly Stew",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "BS2"
@@ -32523,7 +32523,7 @@
     "name": "BS2-021-Carrot Farm Scarecrow",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "BS2"
@@ -33405,7 +33405,7 @@
     "name": "BS2-047-Diving Goggles",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "R",
     "set": "BS2"
@@ -33426,7 +33426,7 @@
     "name": "BS2-048-Jellied Jellyfish Potion",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "BS2"
@@ -33447,7 +33447,7 @@
     "name": "BS2-049-Salt Crystal Trident",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "BS2"
@@ -33468,7 +33468,7 @@
     "name": "BS2-049@1-Salt Crystal Trident",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "P",
     "set": "BS2"
@@ -33489,7 +33489,7 @@
     "name": "BS2-050-Hermit Crab's Shell",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "BS2"
@@ -33510,7 +33510,7 @@
     "name": "BS2-051-Whipped Snowcream Village",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "BS2"
@@ -33783,7 +33783,7 @@
     "name": "BS2-061@1-Hydrangea Cookie",
     "type": "Cookie",
     "cost": 0,
-    "level": "None",
+    "level": "1",
     "color": "Purple",
     "rarity": "SEC",
     "set": "BS2"
@@ -34350,7 +34350,7 @@
     "name": "BS2-077-Forbidden Incantation",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "BS2"
@@ -34371,7 +34371,7 @@
     "name": "BS2-078-Dragon's Breath",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "BS2"
@@ -34392,7 +34392,7 @@
     "name": "BS2-079-Yew Village Scroll",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "BS2"
@@ -34413,7 +34413,7 @@
     "name": "BS2-080-Abandoned Cloud Nest",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "R",
     "set": "BS2"
@@ -34434,7 +34434,7 @@
     "name": "BS2-080@1-Abandoned Cloud Nest",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "P",
     "set": "BS2"
@@ -34455,7 +34455,7 @@
     "name": "BS2-081-Blue Dragon's Eye",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "BS2"
@@ -35127,7 +35127,7 @@
     "name": "BS1-022-Giant Cherry Bomb",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "R",
     "set": "BS1"
@@ -35148,7 +35148,7 @@
     "name": "BS1-022@1-Giant Cherry Bomb",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "P",
     "set": "BS1"
@@ -35169,7 +35169,7 @@
     "name": "BS1-023-Spicy Power Juice",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "BS1"
@@ -35190,7 +35190,7 @@
     "name": "BS1-024-Pasta Spring Shoes",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "BS1"
@@ -35211,7 +35211,7 @@
     "name": "BS1-025-Pineapple Helmet",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "BS1"
@@ -35232,7 +35232,7 @@
     "name": "BS1-026-Desert Oasis",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "BS1"
@@ -35946,7 +35946,7 @@
     "name": "BS1-048-Jelly Pom-Poms",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "BS1"
@@ -35967,7 +35967,7 @@
     "name": "BS1-049-Tropical Slushie",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "R",
     "set": "BS1"
@@ -35988,7 +35988,7 @@
     "name": "BS1-050-Broken Signpost",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "BS1"
@@ -36009,7 +36009,7 @@
     "name": "BS1-051-Super-Vita Jelly Bar",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "BS1"
@@ -36030,7 +36030,7 @@
     "name": "BS1-051@1-Super-Vita Jelly Bar",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "P",
     "set": "BS1"
@@ -36051,7 +36051,7 @@
     "name": "BS1-052-Star Candy Road",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "BS1"
@@ -36072,7 +36072,7 @@
     "name": "BS1-052@1-Star Candy Road",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "P",
     "set": "BS1"
@@ -36765,7 +36765,7 @@
     "name": "BS1-074-Ancient Forest Luckstone",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "BS1"
@@ -36786,7 +36786,7 @@
     "name": "BS1-075-Wanderer's Apple Pie",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "R",
     "set": "BS1"
@@ -36807,7 +36807,7 @@
     "name": "BS1-076-Stinging Nettle",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "BS1"
@@ -36828,7 +36828,7 @@
     "name": "BS1-077-Tasty First Aid Kit",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "BS1"
@@ -36849,7 +36849,7 @@
     "name": "BS1-078-Awakening Ancient Forest",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "BS1"
@@ -36954,7 +36954,7 @@
     "name": "P-008-Macaron Hammer",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "P",
     "set": "Promo"
@@ -37038,7 +37038,7 @@
     "name": "P-012-Mischievous Ladybug",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "P",
     "set": "Promo"
@@ -37059,7 +37059,7 @@
     "name": "P-012@1-Mischievous Ladybug",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "P",
     "set": "P"
@@ -37332,7 +37332,7 @@
     "name": "P-028-Golden Cheese Warehouse",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "P",
     "set": "Promo"
@@ -37353,7 +37353,7 @@
     "name": "P-029-Ritual of Life",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "P",
     "set": "Promo"
@@ -37395,7 +37395,7 @@
     "name": "P-031-The Heir's Betrayal",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "P",
     "set": "Promo"
@@ -37416,7 +37416,7 @@
     "name": "P-032-Hall of Ancient Heroes",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Pure",
     "rarity": "P",
     "set": "Promo"
@@ -37437,7 +37437,7 @@
     "name": "P-036@1-GingerBrave",
     "type": "Cookie",
     "cost": 0,
-    "level": "0",
+    "level": "3",
     "color": "Red",
     "rarity": "P",
     "set": "Promo"
@@ -38361,7 +38361,7 @@
     "name": "P-082-Sugar Gnome Cake Shop",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "P",
     "set": "Promo"
@@ -38403,7 +38403,7 @@
     "name": "P-084-Magic Lettering Pens",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "P",
     "set": "Promo"
@@ -39222,7 +39222,7 @@
     "name": "P-125-0th & Broadway: Avenue of Deceit",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "P",
     "set": "P"
@@ -39327,7 +39327,7 @@
     "name": "P-131-Spinach Cookie",
     "type": "Cookie",
     "cost": 0,
-    "level": "１",
+    "level": "1",
     "color": "Green",
     "rarity": "P",
     "set": "P"
@@ -40314,7 +40314,7 @@
     "name": "ST5-016-BONUS Coin",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "ST5"
@@ -40335,7 +40335,7 @@
     "name": "ST5-017-Violet Dragonspout",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "ST5"
@@ -40356,7 +40356,7 @@
     "name": "ST5-018-Dragonfly Candy Brooch",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "ST5"
@@ -40377,7 +40377,7 @@
     "name": "ST5-019-Pastry Boomerang",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "ST5"
@@ -40398,7 +40398,7 @@
     "name": "ST5-020-Forbidden Grimoire",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "ST5"
@@ -40419,7 +40419,7 @@
     "name": "ST5-020@1-Forbidden Grimoire",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "P",
     "set": "ST5"
@@ -40440,7 +40440,7 @@
     "name": "ST5-021-Hidden Warpgate",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "ST5"
@@ -40461,7 +40461,7 @@
     "name": "ST5-022-Windswept Valley",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "U",
     "set": "ST5"
@@ -40482,7 +40482,7 @@
     "name": "ST5-022@1-Windswept Valley",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Purple",
     "rarity": "P",
     "set": "ST5"
@@ -40881,7 +40881,7 @@
     "name": "ST4-016-Bear Jelly Ice Cream",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "ST4"
@@ -40902,7 +40902,7 @@
     "name": "ST4-017-Emergency Lifebuoy",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "ST4"
@@ -40923,7 +40923,7 @@
     "name": "ST4-018-Lucky Pearls",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "ST4"
@@ -40944,7 +40944,7 @@
     "name": "ST4-019-Sugar Crystal Lamp",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "ST4"
@@ -40965,7 +40965,7 @@
     "name": "ST4-020-Octo-Ink Spray",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "ST4"
@@ -40986,7 +40986,7 @@
     "name": "ST4-021-Fallen Ice Statue",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "ST4"
@@ -41007,7 +41007,7 @@
     "name": "ST4-021@1-Fallen Ice Statue",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "P",
     "set": "ST4"
@@ -41028,7 +41028,7 @@
     "name": "ST4-022-Sugar Glass Dome",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "U",
     "set": "ST4"
@@ -41049,7 +41049,7 @@
     "name": "ST4-022@1-Sugar Glass Dome",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Blue",
     "rarity": "P",
     "set": "ST4"
@@ -41448,7 +41448,7 @@
     "name": "ST3-016-Ancient Healer's Gaze",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "ST3"
@@ -41469,7 +41469,7 @@
     "name": "ST3-017-Viney Vines",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "ST3"
@@ -41490,7 +41490,7 @@
     "name": "ST3-018-Parsley Tea of Invigoration",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "ST3"
@@ -41511,7 +41511,7 @@
     "name": "ST3-019-Supreme Whipped Cream",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "ST3"
@@ -41532,7 +41532,7 @@
     "name": "ST3-019@1-Supreme Whipped Cream",
     "type": "Trap",
     "cost": 0,
-    "level": "None",
+    "level": "",
     "color": "Green",
     "rarity": "P",
     "set": "ST3"
@@ -41553,7 +41553,7 @@
     "name": "ST3-020-Divine Light Crystal",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "ST3"
@@ -41574,7 +41574,7 @@
     "name": "ST3-020@1-Divine Light Crystal",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "P",
     "set": "ST3"
@@ -41595,7 +41595,7 @@
     "name": "ST3-021-Breath of the Flute",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "ST3"
@@ -41616,7 +41616,7 @@
     "name": "ST3-022-Guardian Tree's Blessing",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "U",
     "set": "ST3"
@@ -41637,7 +41637,7 @@
     "name": "ST3-022@1-Guardian Tree's Blessing",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Green",
     "rarity": "P",
     "set": "ST3"
@@ -42057,7 +42057,7 @@
     "name": "ST2-016-Flimsy Screwdriver",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "ST2"
@@ -42078,7 +42078,7 @@
     "name": "ST2-018-Time Travel Ticket",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "ST2"
@@ -42099,7 +42099,7 @@
     "name": "ST2-019-Multi-Vitamin Honey Bomb",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "ST2"
@@ -42120,7 +42120,7 @@
     "name": "ST2-020-Winding Key Shield",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "ST2"
@@ -42141,7 +42141,7 @@
     "name": "ST2-021-Pretzel Snare",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Yellow",
     "rarity": "U",
     "set": "ST2"
@@ -42540,7 +42540,7 @@
     "name": "ST1-016-Icky Sticky Jelly",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "ST1"
@@ -42561,7 +42561,7 @@
     "name": "ST1-017-Exceptional Cake Knife",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "ST1"
@@ -42582,7 +42582,7 @@
     "name": "ST1-018-Sugar-Coated Snail Shell",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "ST1"
@@ -42603,7 +42603,7 @@
     "name": "ST1-019-Fiery Jelly Clump",
     "type": "Item",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "ST1"
@@ -42624,7 +42624,7 @@
     "name": "ST1-020-Overhydrated Dough Swamp",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "ST1"
@@ -42645,7 +42645,7 @@
     "name": "ST1-021-Ouch-Inducing Star Jelly",
     "type": "Trap",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "ST1"
@@ -42666,7 +42666,7 @@
     "name": "ST1-022-Burning Jelly Volcano",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "U",
     "set": "ST1"
@@ -42687,7 +42687,7 @@
     "name": "ST1-022@1-Burning Jelly Volcano",
     "type": "Stage",
     "cost": 0,
-    "level": "0",
+    "level": "",
     "color": "Red",
     "rarity": "P",
     "set": "ST1"
