@@ -7,18 +7,47 @@ export default function CardGrid({ cards, filters, addCard }: any) {
   const [position, setPosition] = useState({ x: 0, y: 0 })
 
   const filtered = cards.filter((card: any) => {
-    if (!card.display.toLowerCase().includes(filters.search.toLowerCase()))
-      return false
-    if (filters.type !== "All" && card.type !== filters.type)
-      return false
-    if (filters.level !== "All" && String(card.level) !== filters.level)
-      return false
-    if (filters.color !== "All" && card.color !== filters.color)
-      return false
-    if (filters.rarity !== "All" && card.rarity !== filters.rarity)
-  return false
-    return true
-  })
+  // Search
+  if (
+    !card.display.toLowerCase().includes(filters.search.toLowerCase())
+  ) {
+    return false;
+  }
+
+  // Type
+  if (
+    filters.type.length > 0 &&
+    !filters.type.includes(card.type)
+  ) {
+    return false;
+  }
+
+  // Level
+  if (
+    filters.level.length > 0 &&
+    !filters.level.includes(String(card.level))
+  ) {
+    return false;
+  }
+
+  // Color
+  if (
+    filters.color.length > 0 &&
+    !filters.color.includes(card.color)
+  ) {
+    return false;
+  }
+
+  // Rarity
+  if (
+    filters.rarity.length > 0 &&
+    !filters.rarity.includes(card.rarity)
+  ) {
+    return false;
+  }
+
+  return true;
+});
 
   return (
     <div className="relative">
