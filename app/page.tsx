@@ -16,11 +16,11 @@ export default function Home() {
 
   // ✅ FULL FILTER STRUCTURE MATCHING CardGrid
   const [filters, setFilters] = useState({
-    search: "",
-    type: "All",
-    level: "All",
-    color: "All",
-    rarity: "All"
+  search: "",
+  type: [] as string[],
+  level: [] as string[],
+  color: [] as string[],
+  rarity: [] as string[],
   })
 
   // LOAD CARDS

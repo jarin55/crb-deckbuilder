@@ -1,88 +1,123 @@
 export default function Filters({ filters, setFilters }: any) {
-  return (
-    <div className="flex gap-3 mb-4 flex-wrap">
+  const toggleFilter = (
+    category: "type" | "level" | "color" | "rarity",
+    value: string
+  ) => {
+    const current = filters[category] as string[];
 
+    if (current.includes(value)) {
+      setFilters({
+        ...filters,
+        [category]: current.filter((v) => v !== value),
+      });
+    } else {
+      setFilters({
+        ...filters,
+        [category]: [...current, value],
+      });
+    }
+  };
+
+  const FilterGroup = ({
+    title,
+    category,
+    options,
+  }: {
+    title: string;
+    category: "type" | "level" | "color" | "rarity";
+    options: string[];
+  }) => (
+    <div className="flex flex-col gap-2">
+      <span className="text-sm font-semibold text-white">{title}</span>
+
+      <div className="flex flex-wrap gap-2">
+        {options.map((option) => {
+          const active = filters[category].includes(option);
+
+          return (
+            <button
+              key={option}
+              type="button"
+              onClick={() => toggleFilter(category, option)}
+              className={`px-3 py-1 rounded-md border transition
+                ${
+                  active
+                    ? "bg-blue-600 border-blue-600 text-white"
+                    : "bg-gray-800 border-gray-700 text-gray-300 hover:bg-gray-700"
+                }`}
+            >
+              {option}
+            </button>
+          );
+        })}
+      </div>
+    </div>
+  );
+
+  return (
+    <div className="flex flex-col gap-5 mb-6">
       {/* Search */}
       <input
-        className="border p-2 bg-white text-black rounded"
+        className="border border-gray-700 bg-white text-black p-2 rounded"
         placeholder="Search"
         value={filters.search}
         onChange={(e) =>
-          setFilters({ ...filters, search: e.target.value })
+          setFilters({
+            ...filters,
+            search: e.target.value,
+          })
         }
       />
 
-      {/* Type */}
-      <select
-        className="border p-2 bg-white text-black rounded"
-        value={filters.type}
-        onChange={(e) =>
-          setFilters({ ...filters, type: e.target.value })
-        }
-      >
-        <option value="All">All Types</option>
-        <option value="Cookie">Cookie</option>
-        <option value="Trap">Trap</option>
-        <option value="Item">Item</option>
-        <option value="Flip">Flip</option>
-        <option value="Stage">Stage</option>
-        <option value="Extra">Extra</option>
-      </select>
+      <FilterGroup
+        title="Type"
+        category="type"
+        options={[
+          "Cookie",
+          "Trap",
+          "Item",
+          "Flip",
+          "Stage",
+          "Extra",
+        ]}
+      />
 
-      {/* Level */}
-      <select
-        className="border p-2 bg-white text-black rounded"
-        value={filters.level}
-        onChange={(e) =>
-          setFilters({ ...filters, level: e.target.value })
-        }
-      >
-        <option value="All">All Levels</option>
-        <option value="1">1</option>
-        <option value="2">2</option>
-        <option value="3">3</option>
-        <option value="5">5</option>
-      </select>
+      <FilterGroup
+        title="Level"
+        category="level"
+        options={["1", "2", "3", "5"]}
+      />
 
-      {/* Color */}
-      <select
-        className="border p-2 bg-white text-black rounded"
-        value={filters.color}
-        onChange={(e) =>
-          setFilters({ ...filters, color: e.target.value })
-        }
-      >
-        <option value="All">All Colors</option>
-        <option value="Blue">Blue</option>
-        <option value="Red">Red</option>
-        <option value="Yellow">Yellow</option>
-        <option value="Green">Green</option>
-        <option value="Purple">Purple</option>
-        <option value="Black">Black</option>
-        <option value="Pure">Pure</option>
-      </select>
+      <FilterGroup
+        title="Color"
+        category="color"
+        options={[
+          "Blue",
+          "Red",
+          "Yellow",
+          "Green",
+          "Purple",
+          "Black",
+          "Pure",
+        ]}
+      />
 
-      {/* Rarity */}
-      <select
-        className="border p-2 bg-white text-black rounded"
-        value={filters.rarity}
-        onChange={(e) =>
-          setFilters({ ...filters, rarity: e.target.value })
-        }
-      >
-        <option value="All">All Rarities</option>
-        <option value="C">C</option>
-        <option value="U">U</option>
-        <option value="R">R</option>
-        <option value="SR">SR</option>
-        <option value="UR">UR</option>
-        <option value="SSR">SSR</option>
-        <option value="SUR">SUR</option>
-        <option value="EXR">EXR</option>
-        <option value="GXR">GXR</option>
-        <option value="P">P</option>
-      </select>
-
+      <FilterGroup
+        title="Rarity"
+        category="rarity"
+        options={[
+          "C",
+          "U",
+          "R",
+          "SR",
+          "UR",
+          "SSR",
+          "SUR",
+          "EXR",
+          "GXR",
+          "P",
+        ]}
+      />
     </div>
-  )
+  );
 }
