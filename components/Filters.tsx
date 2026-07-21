@@ -1,3 +1,4 @@
+import { useState } from "react";
 export default function Filters({ filters, setFilters }: any) {
   const toggleFilter = (
     category: "type" | "level" | "color" | "rarity",
@@ -18,41 +19,54 @@ export default function Filters({ filters, setFilters }: any) {
     }
   };
 
-  const FilterGroup = ({
-    title,
-    category,
-    options,
-  }: {
-    title: string;
-    category: "type" | "level" | "color" | "rarity";
-    options: string[];
-  }) => (
-    <div className="flex flex-col gap-2">
-      <span className="text-sm font-semibold text-white">{title}</span>
+  const [openDropdown, setOpenDropdown] = useState<string | null>(null);
 
-      <div className="flex flex-wrap gap-2">
-        {options.map((option) => {
-          const active = filters[category].includes(option);
+const Dropdown = ({
+  title,
+  category,
+  options,
+}: {
+  title: string;
+  category: "type" | "level" | "color" | "rarity";
+  options: string[];
+}) => (
+  <div className="relative w-56">
+    <button
+      type="button"
+      onClick={() =>
+        setOpenDropdown(openDropdown === category ? null : category)
+      }
+      className="w-full flex justify-between items-center bg-gray-800 border border-gray-700 rounded px-3 py-2"
+    >
+      <span>
+        {filters[category].length === 0
+          ? title
+          : `${title} (${filters[category].length})`}
+      </span>
 
-          return (
-            <button
-              key={option}
-              type="button"
-              onClick={() => toggleFilter(category, option)}
-              className={`px-3 py-1 rounded-md border transition
-                ${
-                  active
-                    ? "bg-blue-600 border-blue-600 text-white"
-                    : "bg-gray-800 border-gray-700 text-gray-300 hover:bg-gray-700"
-                }`}
-            >
-              {option}
-            </button>
-          );
-        })}
+      <span>▼</span>
+    </button>
+
+    {openDropdown === category && (
+      <div className="absolute z-50 mt-1 w-full bg-gray-900 border border-gray-700 rounded shadow-lg max-h-64 overflow-y-auto">
+        {options.map((option) => (
+          <label
+            key={option}
+            className="flex items-center gap-2 px-3 py-2 hover:bg-gray-800 cursor-pointer"
+          >
+            <input
+              type="checkbox"
+              checked={filters[category].includes(option)}
+              onChange={() => toggleFilter(category, option)}
+            />
+
+            {option}
+          </label>
+        ))}
       </div>
-    </div>
-  );
+    )}
+  </div>
+);
 
   return (
     <div className="flex flex-col gap-5 mb-6">
@@ -69,55 +83,58 @@ export default function Filters({ filters, setFilters }: any) {
         }
       />
 
-      <FilterGroup
-        title="Type"
-        category="type"
-        options={[
-          "Cookie",
-          "Trap",
-          "Item",
-          "Flip",
-          "Stage",
-          "Extra",
-        ]}
-      />
+      <div className="flex flex-wrap gap-3">
 
-      <FilterGroup
-        title="Level"
-        category="level"
-        options={["1", "2", "3", "5"]}
-      />
+  <Dropdown
+    title="Type"
+    category="type"
+    options={[
+      "Cookie",
+      "Trap",
+      "Item",
+      "Flip",
+      "Stage",
+      "Extra",
+    ]}
+  />
 
-      <FilterGroup
-        title="Color"
-        category="color"
-        options={[
-          "Blue",
-          "Red",
-          "Yellow",
-          "Green",
-          "Purple",
-          "Black",
-          "Pure",
-        ]}
-      />
+  <Dropdown
+    title="Level"
+    category="level"
+    options={["1", "2", "3", "5"]}
+  />
 
-      <FilterGroup
-        title="Rarity"
-        category="rarity"
-        options={[
-          "C",
-          "U",
-          "R",
-          "SR",
-          "UR",
-          "SSR",
-          "SUR",
-          "EXR",
-          "GXR",
-          "P",
-        ]}
-      />
-    </div>
+  <Dropdown
+    title="Color"
+    category="color"
+    options={[
+      "Blue",
+      "Red",
+      "Yellow",
+      "Green",
+      "Purple",
+      "Black",
+      "Pure",
+    ]}
+  />
+
+  <Dropdown
+    title="Rarity"
+    category="rarity"
+    options={[
+      "C",
+      "U",
+      "R",
+      "SR",
+      "UR",
+      "SSR",
+      "SUR",
+      "EXR",
+      "GXR",
+      "P",
+    ]}
+  />
+
+</div>
   );
 }
